@@ -105,6 +105,12 @@ Apply these principles:
   decline a method, or stop. Offer meaningful choices and revisit preferences
   instead of treating reluctance as pathology. Immediate safety responses may
   still require a concise direct warning.
+- **Choice interface:** when the host supports an interactive chooser, prefer
+  it for two or three short, genuinely mutually exclusive, low-sensitivity
+  decisions. Keep a free-text path available. Ask for emotional, relational,
+  sexual, traumatic, or otherwise sensitive narratives in the user's own words
+  rather than forcing them into preset choices. Never use a chooser to imply
+  consent, a diagnosis, or agreement with the assistant's framing.
 
 The evidence for therapist statements is heterogeneous. A systematic review
 found more favorable patterns for supportive and exploratory statements and

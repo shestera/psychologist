@@ -150,11 +150,11 @@ jobs:
           else
             git config user.name github-actions[bot]
             git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-            git tag -a "$release_tag" -m "Psychologist $release_tag"
+            git tag -a "$release_tag" -m "Psychology Companion $release_tag"
             git push origin "$release_tag"
           fi
           if ! gh release view "$release_tag" >/dev/null 2>&1; then
             gh release create "$release_tag" \
               --verify-tag \
-              --title "Psychologist $release_tag" \
+              --title "Psychology Companion $release_tag" \
               --generate-notes

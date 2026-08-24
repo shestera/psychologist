@@ -1,7 +1,7 @@
 {
   "name": "psychologist-plugins",
   "interface": {
-    "displayName": "Psychologist Plugins"
+    "displayName": "Psychology Companion"
   },
   "plugins": [
     {

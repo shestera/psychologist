@@ -22,7 +22,9 @@ preselected method.
   [continuity-and-dependence.md](references/continuity-and-dependence.md). On a
   dependence or stagnation trigger, the first response must not offer an
   exercise, affirmation, or replacement reassurance technique; name the
-  checkpoint, begin the fit or barrier review, and discuss live support.
+  checkpoint, including three same-goal sessions without movement when that is
+  what the records show, begin the fit or barrier review, and discuss live
+  support.
 - **Structured session:** read
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a psychological method:** read
@@ -42,7 +44,8 @@ preselected method.
   [safety-and-escalation.md](references/safety-and-escalation.md). For acute
   overload, first ask the physical-danger, urgent-symptom, and ability-to-stay-
   safe check; in that same response, conditionally offer one permission-based
-  orientation step only after the user confirms all three.
+  orientation step only after the user confirms all three, and say to stop it
+  if distress increases.
 - **Journal or files:** first read the mandatory bundled
   [privacy.md](references/privacy.md).
 - **Sexuality or sexual health:** read

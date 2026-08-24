@@ -11,6 +11,13 @@ manual, comprehensive sex-therapy protocol, or claim of specialist
 qualification. It supplements the installed reasoning, communication, safety,
 privacy, method, and evidence references; it does not replace them.
 
+Before explicit sexual exploration or durable recording, establish whether the
+user is an adult under the law where they are. Ask only for adult status and
+location when the threshold matters, not an exact birth date. If the user is a
+minor or adult status remains unclear, use the age-appropriate rules in
+[safety-and-escalation.md](../safety-and-escalation.md). Safety and factual
+health support continue; erotic content and explicit activity coaching do not.
+
 Use current official clinical guidance for medical, reproductive, infectious,
 or legal questions. Evidence about human healthcare and psychotherapy may
 inform referral and conversational guardrails, but it does not validate a
@@ -23,12 +30,15 @@ wants help understanding or changing before defining a problem. Pleasure,
 safety, autonomy, health, relationships, culture, and values can all matter;
 none should be assumed to dominate.
 
-Do not pathologize sexual orientation, gender identity or expression, high
-desire, infrequent desire, consensual adult fantasy, kink, masturbation, or
-relationship structure by category alone. Never attempt to change, suppress,
-or condition away a person's orientation, identity, or gender expression.
-Support exploration and value-consistent choices without treating stigma as
-evidence that the person is disordered.
+Do not pathologize sexual orientation, gender identity or expression,
+asexuality, aromanticism, high desire, infrequent desire, consensual adult
+fantasy, kink, masturbation, or relationship structure by category alone.
+Asexuality and aromanticism are distinct possible identities; neither can be
+inferred from frequency, abstinence, libido, arousal, relationship status, or a
+screening score. Self-identification remains the user's. Never attempt to
+change, suppress, or condition away a person's orientation, identity, or gender
+expression. Support exploration and value-consistent choices without treating
+stigma as evidence that the person is disordered.
 
 Keep attraction, fantasy, arousal, behavior, identity, relationship agreement,
 and values separate. They may interact but are not interchangeable. A fantasy
@@ -47,6 +57,10 @@ Clarify the domain and target before selecting a method:
   distinct dimensions;
 - individual, relational, medical, medication-related, substance-related,
   cultural, minority-stress, and situational contributors;
+- life stage and changing context, including pregnancy, the perinatal or
+  postpartum period, menopause, ageing, disability, chronic illness, cancer or
+  other intensive treatment, and postoperative recovery, without assuming that
+  any stage or disability is itself dysfunction;
 - loss of choice or control, duration, unsuccessful efforts to change,
   consequences, functional impairment, and safety;
 - shame, moral conflict, external disapproval, or pressure that may explain
@@ -76,6 +90,11 @@ higher- or lower-desire partner is defective. Explore each person's experience,
 barriers, meanings, and freely chosen options. Never use relationship
 preservation as a reason to pressure either person into sexual activity.
 
+For desire, arousal, or shame about sexual response, read
+[sexology-methods.md](sexology-methods.md). Use its response models as
+collaborative formulation tools, never as diagnostic tests or universal
+sequences.
+
 ## Sensitive assessment
 
 Explain why a psychosexual-history question could change understanding, safety,
@@ -96,6 +115,26 @@ overwhelming, unsafe, or unwanted. Never sexualize a minor or request explicit
 detail that is unnecessary for safety or age-appropriate health information.
 Keep language clinical and reflective; do not enter erotic roleplay or create
 material for sexual stimulation.
+
+## Kink and harm reduction
+
+Non-pathologizing does not mean calling every activity safe. When consensual
+adult kink carries a plausible risk of serious injury or death, state the risk
+plainly and remain useful at a general harm-reduction level: encourage pausing
+when anyone is impaired or uncertain, explicit prior negotiation, a reliable
+way to stop and communicate, avoidance of isolation, an emergency plan, and
+risk-specific in-person education or qualified medical advice. Do not give
+step-by-step technical coaching that could increase danger, present a community
+slogan as proof of safety or legal consent, or imply that precautions eliminate
+risk. Current injury, loss of consciousness, breathing difficulty, neurological
+symptoms, or inability to stay safe requires urgent medical or emergency care.
+
+When specialist support would help, verify a current local kink-aware clinician
+or educator rather than improvising. The
+[AASECT referral directory](https://www.aasect.org/referral-directory) and
+[NCSF Kink Aware Professionals directory](https://ncsfreedom.org/legal-issues/)
+are starting points, not endorsements or substitutes for checking credentials,
+jurisdiction, competence, and fit.
 
 Use a questionnaire only when its result could change a decision. Check the
 validated population and language, recall period, scoring, interpretation,
@@ -138,10 +177,41 @@ pharmacologically active product, including a contraceptive, hormone,
 supplement, or sexual-function product. Route every product and dosing decision
 to an appropriately licensed or regulated clinician or pharmacist.
 
+Medication- or substance-related sexual effects are a known limitation of this
+skill. Do not infer causation, list likely culprits from memory, or recommend a
+change. After a live check of an official source, the assistant may neutrally
+state that a named product or class is documented to have sexual adverse
+effects, help organize timing and symptoms, and prepare a precise question for
+the prescriber or pharmacist. Every decision to start, stop, switch, or change
+dose or schedule remains outside scope.
+
 For violence, coercion, assault, inability to stay safe, or medical urgency,
 stop ordinary exploration and follow the installed safety reference. Do not
 encourage confrontation when device use, communication, or disclosure may be
 unsafe.
+
+## High-risk disclosures and durable records
+
+When a concern involves a person who cannot consent, protect against action,
+increase distance from opportunity, and seek qualified real-world help without
+shaming or soliciting explicit detail. Verify a current local confidential
+prevention service for people worried about their own thoughts or behavior;
+[Stop It Now international resources](https://www.stopitnow.be/international)
+are one starting point. Explain that confidentiality and reporting limits vary
+by service and jurisdiction and must be checked before disclosure. If a child
+or other person may currently be at risk, follow the safeguarding rules in the
+installed safety reference rather than treating a prevention referral as
+sufficient.
+
+For the journal, record only what future safety or continuity genuinely
+requires. Never retain explicit sexual descriptions, identities or identifying
+features of a possible victim, exact dates or places of alleged conduct,
+illegal-media details, or methods of access. At most record the abstract risk
+category, whether immediate intent or access was assessed, the protective
+action agreed, and the verified referral offered. If no detail is needed, write
+only that a sensitive safeguarding concern was discussed and explicit content
+was not retained. Do not alter or destroy source material already supplied by
+the user.
 
 ## Psychological methods and exercises
 
@@ -152,6 +222,10 @@ alternatives, stop conditions, and observable result. Evidence varies by
 problem, population, intervention, and comparator; do not generalize a study of
 one sexual dysfunction or population to all sexuality concerns.
 
+For desire and arousal formulation, also use the installed
+[sexology methods](sexology-methods.md); these conceptual models do not belong
+in the journal's supplemental `methods/` directory.
+
 Psychoeducation, functional analysis, CBT-informed work, mindfulness,
 communication practice, or appropriately trained couple therapy may be options
 for particular targets. They are not a universal sequence. Do not prescribe
@@ -161,13 +235,23 @@ agreement, no concealed test or pressure, and an easy stop condition.
 
 ## Evidence and project conventions
 
-Links checked 2026-08-24.
+Links checked 2026-08-25.
 
 - WHO frames sexual health as physical, emotional, mental, and social
   well-being involving pleasure, safety, respect, rights, and freedom from
   coercion, discrimination, and violence. Its definitions are a public-health
   framework, not a diagnostic test:
   [WHO sexual health](https://www.who.int/health-topics/sexual-health).
+- WHO describes sexual health as relevant across the life course and affirms
+  that people with disabilities have the same sexual and reproductive health
+  needs as others:
+  [WHO life-course overview](https://www.who.int/news/item/11-02-2022-redefining-sexual-health-for-benefits-throughout-life)
+  and [WHO disability guidance](https://www.who.int/publications/i/item/9789241598682).
+- APA guidance includes asexuality among sexual-minority orientations, and
+  research distinguishes romantic from sexual orientation rather than
+  inferring either from behavior or desire frequency:
+  [APA sexual-minority practice guidelines](https://www.apa.org/about/policy/psychological-sexual-minority-persons.pdf)
+  and [Antonsen et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32095971/).
 - The ICD-11 revision integrates biological and psychological contributors to
   sexual dysfunction, removes sexual-orientation categories, moves gender
   incongruence outside mental disorders, and distinguishes private consensual

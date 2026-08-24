@@ -13,8 +13,11 @@ This repository packages a psychologist skill for Codex and Claude Code.
 - `skills/psychologist/references/` holds source-backed professional guidance;
   `privacy.md` is the mandatory privacy and journal security policy,
   `core-methods.md` defines built-in methods, and `additional-methods.md`
-  governs journal-specific supplemental methods. The psychometric registry is
-  a dated starting point, not a bundled questionnaire library.
+  governs journal-specific supplemental methods. `evidence-appendix.md` keeps
+  audit citations out of the ordinary conversation path, while
+  `continuity-and-dependence.md` holds longitudinal safeguards. The
+  psychometric registry is a dated starting point, not a bundled questionnaire
+  library.
 - `skills/psychologist/assets/note-templates/` holds schemas that remain inside
   the skill and are used to create initialized user-data records.
 

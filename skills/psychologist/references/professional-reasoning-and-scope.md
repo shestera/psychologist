@@ -30,11 +30,7 @@ plausible alternatives, and—when useful—a future observation that could
 distinguish the versions. Do not force this into a checklist in ordinary
 conversation.
 
-Clinical-reasoning studies associate anchoring, availability, and
-overconfidence with some errors, but studies of debiasing interventions are
-heterogeneous and do not establish a universal procedure. Psychological case
-formulation is useful as an organizing practice, yet reviews find limited
-evidence that formulation itself improves outcomes. Present formulations as
+Do not turn debiasing into a universal checklist. Present formulations as
 working maps, not discovered causes.
 
 A screening or rating score estimates risk or symptom burden for a defined
@@ -95,43 +91,6 @@ If immediate danger may be present, stop ordinary exploration and read
 verified local emergency or crisis help, and a trusted person who can be
 physically present when safe to involve.
 
-## Evidence and limits
-
-- A modern causality review treats temporality as one consideration alongside
-  confounding, plausibility, and experimental evidence:
-  [Fedak et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33324996/).
-- Reviews of diagnostic reasoning find bias-related errors but limited and
-  heterogeneous evidence for corrective interventions:
-  [Saposnik et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27809908/) and
-  [Lambe et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26873253/).
-- Reviews of case formulation report a restricted evidence base and no clear
-  demonstration that formulation improves treatment outcomes:
-  [Easden & Kazantzis, 2018](https://pubmed.ncbi.nlm.nih.gov/28776663/) and
-  [Rainforth & Laurenson, 2014](https://pubmed.ncbi.nlm.nih.gov/23551415/).
-- Symptom questionnaires can overestimate disorder prevalence compared with
-  diagnostic interviews, illustrating why screening is not diagnosis:
-  [Levis et al., 2020](https://pubmed.ncbi.nlm.nih.gov/30894161/).
-- Shared decision making includes discussing options, benefits, harms, and
-  preferences; preference accommodation has small favorable associations with
-  satisfaction, completion, and outcomes:
-  [Hoffmann et al., 2014](https://pubmed.ncbi.nlm.nih.gov/24999896/) and
-  [Lindhiem et al., 2014](https://pubmed.ncbi.nlm.nih.gov/25189522/).
-- Mechanistic evidence is distinct from direct evidence linking an intervention
-  to clinical outcomes:
-  [AHRQ Evidence-based Practice Center, 2013](https://pubmed.ncbi.nlm.nih.gov/24027800/).
-- Reviews of LLM health and mental-health applications find heterogeneous
-  validation, limited safety evaluation, and risks that preclude treating a
-  general chatbot as a professional substitute:
-  [Huo et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39903463/) and
-  [Guo et al., 2024](https://pubmed.ncbi.nlm.nih.gov/39423368/).
-- Public general-purpose chatbots show inconsistent performance in identifying
-  drug interactions. This reliability concern informs, but does not by itself
-  prove, the chosen hard no-recommendation boundary:
-  [A systematic mapping review, 2025](https://pubmed.ncbi.nlm.nih.gov/40999995/).
-- WHO guidance keeps humans in control of health decisions and defines sexual
-  health as requiring safety and freedom from coercion:
-  [WHO AI ethics](https://www.who.int/news/item/28-06-2021-who-issues-first-global-report-on-ai-in-health-and-six-guiding-principles-for-its-design-and-use)
-  and [WHO sexual health](https://www.who.int/teams/sexual-and-reproductive-health-and-research/key-areas-of-work/sexual-health/defining-sexual-health).
-- NICE guidance prioritizes immediate safety concerns and urgent local care in
-  self-harm contexts:
-  [NICE NG225](https://www.nice.org.uk/guidance/ng225/chapter/recommendations).
+For the sources and limitations behind this standard, read the
+[evidence appendix](evidence-appendix.md) only when auditing or maintaining the
+skill's foundational claims.

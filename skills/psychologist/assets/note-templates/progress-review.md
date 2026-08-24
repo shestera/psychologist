@@ -23,4 +23,11 @@ confidentiality: sensitive-pseudonymized
 
 ## User's view of helpfulness, fit, and burden
 
+## Continuity and support review
+
+Record the number of consecutive substantive sessions on the same goal without
+observable movement, whether use is expanding choice or delaying needed human
+support, and any agreed escalation. Do not infer dependence from session count
+alone.
+
 ## Agreed adjustment

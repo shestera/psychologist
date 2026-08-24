@@ -39,6 +39,8 @@ jobs:
           test -f skills/psychologist/SKILL.md
           test -f skills/psychologist/references/privacy.md
           test -f skills/psychologist/references/evidence-appendix.md
+          test -f skills/psychologist/references/specialties/sexology-safety.md
+          test -f skills/psychologist/references/specialties/sexual-health-and-substances.md
           test -f LICENSE
           test -f PRIVACY.md
           test -f SECURITY.md
@@ -85,7 +87,7 @@ jobs:
         shell: bash
         run: |
           jq -s -e '
-            length == 20 and
+            length == 26 and
             (map(.id) | unique | length) == length and
             all(.[];
               (.id | type == "string" and length > 0) and

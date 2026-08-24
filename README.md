@@ -143,7 +143,7 @@ skill or its bundled privacy and security policy.
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychologist
 python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 claude plugin validate --strict .
-jq -s -e 'length == 20 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
+jq -s -e 'length == 26 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
 find . -path ./.git -prune -o -path ./tmp -prune -o -type f -perm -111 -print
 rg --files -g '!tmp/**' | rg -i '\.(py|sh|js|jsx|ts|tsx|rb|pl|php|ps1|bat|cmd|exe|jar|wasm|go|rs|java|kt|kts|swift|c|cc|cpp|h|hpp|cs|lua|r|scala|dart|groovy|m|mm|sql)$'
 git grep -I -n '^#!'

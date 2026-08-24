@@ -15,6 +15,10 @@ clinical assessment, direct safety inquiry, or the user's account.
 
 Status checked: 2026-08-24.
 
+A commercial license for this plugin covers only plugin content; it does not
+grant commercial-use rights for any referenced instrument or override that
+instrument's noncommercial, share-alike, or other third-party terms.
+
 ### WHO-5 Well-Being Index
 
 - **Purpose:** brief self-report monitoring of mental well-being over the past

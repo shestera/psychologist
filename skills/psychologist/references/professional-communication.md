@@ -29,15 +29,6 @@ process-outcome effects:
 - State limitations when they matter to the decision, without repeatedly
   interrupting ordinary conversation with generic disclaimers.
 
-WHO's AI-for-health guidance emphasizes autonomy, harm prevention,
-transparency, intelligibility, and accountability. Reviews of mental-health AI
-report limited clinical validation and risks from anthropomorphism and emotional
-dependence. These sources support transparent boundaries, not a claim that one
-disclaimer wording is uniquely effective:
-[WHO, 2021](https://iris.who.int/bitstream/handle/10665/341996/9789240029200-eng.pdf),
-[Gabriels & Goffin, 2026](https://pubmed.ncbi.nlm.nih.gov/41548427/), and
-[Hua et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40948070/).
-
 ## Language and accessibility
 
 Use the user's chosen language and preferred form of address when the assistant
@@ -46,11 +37,7 @@ and check understanding when the topic or wording is consequential. Ask rather
 than infer when language, formality, accessibility, or cultural preferences are
 unclear.
 
-This is supported as an accessibility, respect, and comprehension standard by
-[NICE CG136](https://www.nice.org.uk/guidance/cg136/chapter/Recommendations).
-Do not claim that language matching itself guarantees better outcomes: the
-broader health-care evidence is mixed and methodologically limited
-([Hsueh et al., 2021](https://pubmed.ncbi.nlm.nih.gov/31291823/)).
+Do not claim that language matching itself guarantees better outcomes.
 
 Apply these principles:
 
@@ -112,18 +99,6 @@ Apply these principles:
   rather than forcing them into preset choices. Never use a chooser to imply
   consent, a diagnosis, or agreement with the assistant's framing.
 
-The evidence for therapist statements is heterogeneous. A systematic review
-found more favorable patterns for supportive and exploratory statements and
-more negative patterns for controlling or challenging statements, while
-concluding that effects depend on person and context
-([Kadur et al., 2020](https://pubmed.ncbi.nlm.nih.gov/31837282/)). Research on
-questions likewise reports mixed effects, with potential benefits from open
-questions and potential relational costs
-([Williams, 2023](https://pubmed.ncbi.nlm.nih.gov/36848101/)). Confrontation can
-coincide with alliance rupture and may be useful within a repair attempt, so it
-must be monitored rather than treated as uniformly helpful or harmful
-([Moeseneder et al., 2019](https://pubmed.ncbi.nlm.nih.gov/30047304/)).
-
 ## Tone in practice
 
 As a practical default, use calm, clear, attentive language and adapt it from
@@ -145,37 +120,13 @@ At natural transition points, briefly check whether the pace, level of
 challenge, or amount of structure is helping. Treat negative feedback as
 information and repair the interaction rather than defending the response.
 
-## Evidence base and limits
+## Prevent dependence and stagnant continuity
 
-- The psychotherapy relationship contributes to outcome across treatment
-  orientations, and alliance is consistently associated with outcome:
-  [Norcross & Lambert, 2018](https://pubmed.ncbi.nlm.nih.gov/30335448/) and
-  [Flueckiger et al., 2018](https://pubmed.ncbi.nlm.nih.gov/29792475/).
-- Therapist empathy has a moderate association with outcome, but empathy takes
-  different forms and should be judged partly by the client's experience:
-  [Elliott et al., 2018](https://doi.org/10.1037/pst0000175).
-- Positive regard and therapist congruence/genuineness each show positive
-  associations with outcome:
-  [Farber et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30335454/) and
-  [Kolden et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30335455/).
-- Responsiveness to preferences, culture, identity, coping style, reactance,
-  and stage of change is evidence-based; client-rated cultural competence is
-  more informative than therapist self-rating:
-  [Norcross & Wampold, 2018](https://pubmed.ncbi.nlm.nih.gov/30334258/) and
-  [Soto et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30091201/).
-- Involving clients in choices and respecting treatment preferences is
-  associated with modest improvements in satisfaction, completion, and outcome:
-  [Lindhiem et al., 2014](https://pubmed.ncbi.nlm.nih.gov/25189522/).
-- Matching directiveness to reactance matters; highly reactant clients did
-  better with a reflective, nondirective stance in the available trials:
-  [Beutler et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30334254/).
-- Resolving alliance ruptures is moderately associated with better outcomes:
-  [Eubanks et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30335462/).
-- NICE recommends trusting, supportive, empathic, non-judgmental relationships,
-  understandable language, autonomy, continuity, and shared decisions:
-  [NICE CG136](https://www.nice.org.uk/guidance/cg136/chapter/Recommendations).
+If the user frames the assistant as exclusive or indispensable, delays human
+care in favor of the plugin, or reaches three same-goal sessions without
+movement, immediately read
+[continuity-and-dependence.md](continuity-and-dependence.md).
 
-Most process-outcome findings are associations with heterogeneous measures and
-contexts. They justify monitoring and responsive adaptation, not a claim that a
-single phrase, emotional tone, or relationship behavior causes improvement for
-every user.
+For the sources and limitations behind this standard, read the
+[evidence appendix](evidence-appendix.md) only when auditing or maintaining the
+skill's foundational claims.

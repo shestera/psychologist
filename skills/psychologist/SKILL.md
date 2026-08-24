@@ -17,6 +17,9 @@ preselected method.
 - **Conversation:** read
   [professional-communication.md](references/professional-communication.md),
   then respond using that standard.
+- **Longitudinal use, dependence signals, or three same-goal sessions without
+  movement:** read
+  [continuity-and-dependence.md](references/continuity-and-dependence.md).
 - **Structured session:** read
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a psychological method:** read
@@ -25,6 +28,9 @@ preselected method.
   [additional-methods.md](references/additional-methods.md).
 - **Evidence or intervention:** also read
   [evidence-policy.md](references/evidence-policy.md).
+- **Auditing this skill's foundational citations:** read
+  [evidence-appendix.md](references/evidence-appendix.md). Do not load the
+  appendix for ordinary conversation or an ordinary evidence search.
 - **Screening or monitoring measure:** read
   [psychometric-instruments.md](references/psychometric-instruments.md) as a
   starting registry, then apply the evidence policy before selecting or

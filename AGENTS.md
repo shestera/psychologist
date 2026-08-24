@@ -17,7 +17,9 @@ This repository packages a psychologist skill for Codex and Claude Code.
   audit citations out of the ordinary conversation path, while
   `continuity-and-dependence.md` holds longitudinal safeguards. The
   psychometric registry is a dated starting point, not a bundled questionnaire
-  library.
+  library. `references/specialties/sexology.md` holds the core sexology stance;
+  safety and medical or substance-use details live in conditionally routed
+  sibling references.
 - `skills/psychologist/assets/note-templates/` holds schemas that remain inside
   the skill and are used to create initialized user-data records.
 

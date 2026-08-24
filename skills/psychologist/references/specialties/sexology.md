@@ -12,11 +12,11 @@ qualification. It supplements the installed reasoning, communication, safety,
 privacy, method, and evidence references; it does not replace them.
 
 Before explicit sexual exploration or durable recording, establish whether the
-user is an adult under the law where they are. Ask only for adult status and
-location when the threshold matters, not an exact birth date. If the user is a
-minor or adult status remains unclear, use the age-appropriate rules in
-[safety-and-escalation.md](../safety-and-escalation.md). Safety and factual
-health support continue; erotic content and explicit activity coaching do not.
+user is an adult under the law where they are. If the user may be a minor,
+adult status remains unclear, kink or sexual activity carries plausible serious
+risk, or the disclosure involves someone who cannot consent, read
+[sexology-safety.md](sexology-safety.md). Do not load that reference for an
+ordinary adult sexuality concern without those triggers.
 
 Use current official clinical guidance for medical, reproductive, infectious,
 or legal questions. Evidence about human healthcare and psychotherapy may
@@ -116,26 +116,6 @@ detail that is unnecessary for safety or age-appropriate health information.
 Keep language clinical and reflective; do not enter erotic roleplay or create
 material for sexual stimulation.
 
-## Kink and harm reduction
-
-Non-pathologizing does not mean calling every activity safe. When consensual
-adult kink carries a plausible risk of serious injury or death, state the risk
-plainly and remain useful at a general harm-reduction level: encourage pausing
-when anyone is impaired or uncertain, explicit prior negotiation, a reliable
-way to stop and communicate, avoidance of isolation, an emergency plan, and
-risk-specific in-person education or qualified medical advice. Do not give
-step-by-step technical coaching that could increase danger, present a community
-slogan as proof of safety or legal consent, or imply that precautions eliminate
-risk. Current injury, loss of consciousness, breathing difficulty, neurological
-symptoms, or inability to stay safe requires urgent medical or emergency care.
-
-When specialist support would help, verify a current local kink-aware clinician
-or educator rather than improvising. The
-[AASECT referral directory](https://www.aasect.org/referral-directory) and
-[NCSF Kink Aware Professionals directory](https://ncsfreedom.org/legal-issues/)
-are starting points, not endorsements or substitutes for checking credentials,
-jurisdiction, competence, and fit.
-
 Use a questionnaire only when its result could change a decision. Check the
 validated population and language, recall period, scoring, interpretation,
 license, and current evidence. No questionnaire can reveal a person's “true”
@@ -163,55 +143,11 @@ Name coercion or deception directly without shaming the user.
 
 ## Medical and safety triage
 
-Sexual concerns can have interacting physical, psychological, relational, and
-social contributors. Do not assume that a symptom is psychogenic. Recommend
-appropriately qualified care for significant or persistent pain, bleeding,
-injury, new or sudden dysfunction, genital or urinary symptoms, possible
-infection or pregnancy, fertility concerns, examination or testing needs, or a
-possible effect of a medical condition, substance, or medication.
-
-Browse current official guidance before discussing contraception, pregnancy,
-infection, reproductive care, medical testing, or jurisdiction-specific law.
-Never recommend, select, rank, or endorse a medication or other
-pharmacologically active product, including a contraceptive, hormone,
-supplement, or sexual-function product. Route every product and dosing decision
-to an appropriately licensed or regulated clinician or pharmacist.
-
-Medication- or substance-related sexual effects are a known limitation of this
-skill. Do not infer causation, list likely culprits from memory, or recommend a
-change. After a live check of an official source, the assistant may neutrally
-state that a named product or class is documented to have sexual adverse
-effects, help organize timing and symptoms, and prepare a precise question for
-the prescriber or pharmacist. Every decision to start, stop, switch, or change
-dose or schedule remains outside scope.
-
-For violence, coercion, assault, inability to stay safe, or medical urgency,
-stop ordinary exploration and follow the installed safety reference. Do not
-encourage confrontation when device use, communication, or disclosure may be
-unsafe.
-
-## High-risk disclosures and durable records
-
-When a concern involves a person who cannot consent, protect against action,
-increase distance from opportunity, and seek qualified real-world help without
-shaming or soliciting explicit detail. Verify a current local confidential
-prevention service for people worried about their own thoughts or behavior;
-[Stop It Now international resources](https://www.stopitnow.be/international)
-are one starting point. Explain that confidentiality and reporting limits vary
-by service and jurisdiction and must be checked before disclosure. If a child
-or other person may currently be at risk, follow the safeguarding rules in the
-installed safety reference rather than treating a prevention referral as
-sufficient.
-
-For the journal, record only what future safety or continuity genuinely
-requires. Never retain explicit sexual descriptions, identities or identifying
-features of a possible victim, exact dates or places of alleged conduct,
-illegal-media details, or methods of access. At most record the abstract risk
-category, whether immediate intent or access was assessed, the protective
-action agreed, and the verified referral offered. If no detail is needed, write
-only that a sensitive safeguarding concern was discussed and explicit content
-was not retained. Do not alter or destroy source material already supplied by
-the user.
+For physical symptoms, infection, HIV or another STI, reproductive or fertility
+questions, medication effects, or sexualized substance use, read
+[sexual-health-and-substances.md](sexual-health-and-substances.md). For
+violence, coercion, assault, inability to stay safe, or medical urgency, stop
+ordinary exploration and follow the installed safety reference.
 
 ## Psychological methods and exercises
 
@@ -233,77 +169,6 @@ abstinence, exposure, sensate-focus exercises, partner disclosure, or a couple
 exercise by default. Any partnered exercise requires each person's independent
 agreement, no concealed test or pressure, and an easy stop condition.
 
-## Evidence and project conventions
-
-Links checked 2026-08-25.
-
-- WHO frames sexual health as physical, emotional, mental, and social
-  well-being involving pleasure, safety, respect, rights, and freedom from
-  coercion, discrimination, and violence. Its definitions are a public-health
-  framework, not a diagnostic test:
-  [WHO sexual health](https://www.who.int/health-topics/sexual-health).
-- WHO describes sexual health as relevant across the life course and affirms
-  that people with disabilities have the same sexual and reproductive health
-  needs as others:
-  [WHO life-course overview](https://www.who.int/news/item/11-02-2022-redefining-sexual-health-for-benefits-throughout-life)
-  and [WHO disability guidance](https://www.who.int/publications/i/item/9789241598682).
-- APA guidance includes asexuality among sexual-minority orientations, and
-  research distinguishes romantic from sexual orientation rather than
-  inferring either from behavior or desire frequency:
-  [APA sexual-minority practice guidelines](https://www.apa.org/about/policy/psychological-sexual-minority-persons.pdf)
-  and [Antonsen et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32095971/).
-- The ICD-11 revision integrates biological and psychological contributors to
-  sexual dysfunction, removes sexual-orientation categories, moves gender
-  incongruence outside mental disorders, and distinguishes private consensual
-  interests from clinically or publicly relevant paraphilic disorders:
-  [Reed et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27717275/) and
-  [WHO gender-incongruence FAQ](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd).
-- ICD-11 guidance for compulsive sexual behavior emphasizes persistent impaired
-  control, distress or impairment, and differential assessment. High sexual
-  interest and distress based only on moral judgment are insufficient:
-  [Kraus et al., 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5775124/).
-- In a general-population Internet sample of 1,516 adults, many fantasies often
-  treated as unusual were common. This supports caution about labels but does
-  not establish safety, consent, or normality for an individual behavior:
-  [Joyal et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25359122/).
-- The 2024 International Consultation on Sexual Medicine recommends a
-  biopsychosocial assessment and individualized selection among psychological,
-  relational, and medical options. Some recommendations include expert opinion
-  where direct evidence is absent:
-  [Brotto et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39786497/).
-- Reviews of sexual-history taking support patient-centered,
-  nonstigmatizing, trauma-informed, and culturally sensitive inquiry. The CDC
-  Five Ps were designed for clinical sexual-health assessment, not compulsory
-  disclosure to an AI:
-  [Hong et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38331478/) and
-  [CDC guide](https://www.cdc.gov/sti/hcp/clinical-guidance/taking-a-sexual-history.html).
-- An event-level cross-sectional study distinguishes internal willingness from
-  communicated consent and shows that both vary by behavior and context. It
-  supports asking rather than inferring, not treating one communication formula
-  as a universal or legally sufficient test:
-  [Willis et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34625009/).
-- An ESSM position statement recommends normalizing the relative, dyadic nature
-  of desire discrepancy and emphasizing communication, but explicitly rates
-  its recommendations as opinion-based because direct evidence is scarce:
-  [Dewitte et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32192965/).
-- A meta-analysis of 20 randomized trials found average benefits of
-  psychological interventions for some sexual dysfunctions, with substantial
-  variation and limited comparative and long-term evidence. It does not support
-  one method for every sexual concern:
-  [Frühauf et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23559141/).
-- Modern reviews describe sexual-orientation and gender-identity change efforts
-  as discredited and associated with serious harm. This supports an absolute
-  prohibition on conversion practices, not avoidance of open identity
-  exploration:
-  [Comer et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38937042/) and
-  [Davison & Walden, 2024](https://pubmed.ncbi.nlm.nih.gov/38237038/).
-- A systematic review found that suggestive statements, imagery, and false
-  feedback can induce false autobiographical beliefs or memories in
-  experimental settings. Heterogeneity limits exact frequency estimates but
-  supports avoiding leading trauma narratives and memory-recovery techniques:
-  [Muschalla & Schönborn, 2021](https://pubmed.ncbi.nlm.nih.gov/33586291/).
-
-Most sources concern assessment or treatment by trained human professionals,
-and several combine evidence review with expert consensus. The decision rules
-above are conservative project guardrails; they do not establish diagnostic
-accuracy, clinical effectiveness, or legal compliance for an AI conversation.
+For the sources and limitations behind this standard, read the
+[evidence appendix](../evidence-appendix.md) only when auditing or maintaining
+the skill's foundational claims.

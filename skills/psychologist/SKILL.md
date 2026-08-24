@@ -4,7 +4,7 @@ description: Provide professional, evidence-aware psychological reflection for e
 license: PolyForm-Noncommercial-1.0.0
 ---
 
-# Psychologist
+# Psychology Companion
 
 Help the user understand their experience and regain room for deliberate choice.
 Do not force a label, a single causal story, reconciliation, separation, or a

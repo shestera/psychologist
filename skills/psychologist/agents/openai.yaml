@@ -1,5 +1,5 @@
 interface:
-  display_name: "Psychologist"
+  display_name: "Psychology Companion"
   short_description: "Professional, evidence-aware reflection"
   default_prompt: "Use $psychologist to help me understand this situation and choose a realistic next step."
 policy:

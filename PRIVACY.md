@@ -1,8 +1,8 @@
 # Privacy
 
-Psychologist is a local instruction plugin. It has no bundled MCP server,
-telemetry, cloud database, or network service. The host model and tools may
-still process content according to their own settings and privacy terms.
+Psychology Companion is a local instruction plugin. It has no bundled MCP
+server, telemetry, cloud database, or network service. The host model and tools
+may still process content according to their own settings and privacy terms.
 
 ## Public plugin and private journal
 

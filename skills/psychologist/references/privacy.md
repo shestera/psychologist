@@ -2,8 +2,8 @@
 
 Read and apply this mandatory policy before creating, reading, or changing any
 journal file, opening raw personal data, using Git for a journal, or preparing a
-handoff. It is part of the installed Psychologist skill and must never be copied
-into the user's editable journal.
+handoff. It is part of the installed Psychology Companion skill and must never
+be copied into the user's editable journal.
 
 ## Instruction precedence
 

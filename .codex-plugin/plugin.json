@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Psychologist",
+    "displayName": "Psychology Companion",
     "shortDescription": "Professional, evidence-aware reflection",
     "longDescription": "A psychological assistant for emotional reflection, recurring patterns, relationships, and sexuality. It uses professional, empathic, collaborative communication, separates evidence from hypotheses, and maintains continuity in a dedicated private journal.",
     "developerName": "shestera",

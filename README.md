@@ -1,8 +1,8 @@
-# Psychologist
+# Psychology Companion
 
-Psychologist is a professional, evidence-aware AI assistant for reflection,
-recurring patterns, relationships, and sexuality. It is designed for thoughtful
-conversation, not diagnosis or emergency care.
+Psychology Companion is a professional, evidence-aware AI assistant for
+reflection, recurring patterns, relationships, and sexuality. It is designed
+for thoughtful conversation, not diagnosis or emergency care.
 
 The default experience is a general psychological assistant. A focused
 sexology specialty is loaded only when the topic calls for it. A dedicated
@@ -11,7 +11,7 @@ setup.
 
 ## Important disclaimer
 
-Psychologist is an AI instruction plugin. It is not a psychologist,
+Psychology Companion is an AI instruction plugin. It is not a psychologist,
 psychotherapist, physician, or other licensed or certified professional, and it
 does not create a clinician-patient relationship. Its output is for reflection
 and general information; it is not a diagnosis, treatment plan, medical advice,
@@ -37,9 +37,9 @@ emergency or crisis services.
 - Records each substantive session and updates continuity files whenever it is
   running inside a dedicated journal workspace.
 
-Psychologist does not claim to be a licensed clinician, provide a diagnosis,
-replace medical care, recommend medications or other pharmacologically active
-products, or perform erotic roleplay.
+Psychology Companion does not claim to be a licensed clinician, provide a
+diagnosis, replace medical care, recommend medications or other
+pharmacologically active products, or perform erotic roleplay.
 
 ## Install from the repository marketplace
 
@@ -55,10 +55,13 @@ Add the GitHub repository as an external marketplace:
 codex plugin marketplace add shestera/psychologist
 ```
 
-Restart ChatGPT Desktop, open the Plugins Directory, select **Psychologist
-Plugins**, and install **Psychologist**. In Codex CLI, open `/plugins` and
-install it from the same marketplace. Start a new conversation after
-installation.
+Restart ChatGPT Desktop, open the Plugins Directory, select **Psychology
+Companion**, and install it. In Codex CLI, open `/plugins` and install it from
+the same marketplace. Start a new conversation after installation.
+
+The public display name is **Psychology Companion**. The stable technical IDs
+remain `psychologist` for the plugin and `psychologist-plugins` for the
+marketplace, so existing commands and installations keep working.
 
 ### Claude Code
 
@@ -91,7 +94,7 @@ allow normal skill discovery.
 Load the repository directly:
 
 ```sh
-claude --plugin-dir /path/to/Psychologist
+claude --plugin-dir /path/to/psychologist
 ```
 
 Then use `/psychologist:psychologist` or ask a relevant question normally.

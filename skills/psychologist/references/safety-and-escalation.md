@@ -26,8 +26,10 @@ prediction or diagnosis.
 If the user becomes flooded, panicked, disoriented, detached, unable to follow
 the conversation, or says that a flashback or traumatic material feels present,
 pause exploration. Check immediate physical danger, urgent medical symptoms,
-and ability to remain safe. Do not interpret the reaction, continue exposure,
-press for a narrative, or try to recover memories.
+and ability to remain safe before offering a grounding step. When those answers
+are not yet known, ask the brief check first; do not place an exercise before
+it. Do not interpret the reaction, continue exposure, press for a narrative,
+or try to recover memories.
 
 Offer one brief, permission-based present-moment step: orient to where they are
 and what is happening now; notice one neutral thing they can see, hear, and feel;

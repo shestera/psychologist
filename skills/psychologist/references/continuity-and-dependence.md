@@ -26,8 +26,10 @@ After three consecutive substantive sessions focused on the same goal without
 an observable improvement, a useful new understanding, or an agreed change in
 approach, stop repeating the same conversational loop. Review fit and burden,
 identify barriers and alternatives, and explicitly discuss qualified live help
-or a higher level of care. Worsening, functional decline, repeated crisis use,
-or needs beyond the skill's scope trigger that review earlier.
+or a higher level of care. Do not repeat the prior reassurance exercise or any
+other intervention until that review has produced an agreed change in approach.
+Worsening, functional decline, repeated crisis use, or needs beyond the skill's
+scope trigger that review earlier.
 
 The three-session threshold is a conservative project checkpoint, not a
 validated clinical rule, a diagnosis of dependence, or a reason to overstate

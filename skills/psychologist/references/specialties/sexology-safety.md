@@ -69,5 +69,7 @@ illegal-media details, or methods of access. At most record the abstract risk
 category, whether immediate intent or access was assessed, the protective
 action agreed, and the verified referral offered. If no detail is needed, write
 only that a sensitive safeguarding concern was discussed and explicit content
-was not retained. Do not alter or destroy source material already supplied by
-the user.
+was not retained. This minimum-record rule overrides the journal's ordinary
+standing updates: write only the session note unless the user separately asks
+for another record and that record is genuinely necessary. Do not alter or
+destroy source material already supplied by the user.

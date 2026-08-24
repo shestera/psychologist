@@ -212,3 +212,5 @@ or update a research brief and a method record under their installed review
 rules. Do not rely on any local file for this standing behavior and do not wait
 for a repeated request. Do not commit, push, publish, transmit, or destructively
 edit journal data without authorization for that exact action and destination.
+When closing a session, summarize the supported understanding and agreed next
+focus, invite correction of the record, and link only files actually changed.

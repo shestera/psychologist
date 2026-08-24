@@ -28,9 +28,9 @@ the conversation, or says that a flashback or traumatic material feels present,
 pause exploration. Check immediate physical danger, urgent medical symptoms,
 and ability to remain safe before offering a grounding step. When those answers
 are not yet known, ask the brief check first; do not place an exercise before
-it. In the same response, you may say that if the user confirms safety and no
-urgent symptoms, you can offer one brief permission-based orientation step;
-do not make completing that step a condition for answering the safety check.
+it. In the same response, state that if the user confirms safety and no urgent
+symptoms, they may choose one brief permission-based orientation step; do not
+make completing that step a condition for answering the safety check.
 Do not interpret the reaction, continue exposure, press for a narrative, or
 try to recover memories.
 

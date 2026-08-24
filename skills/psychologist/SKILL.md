@@ -19,7 +19,10 @@ preselected method.
   then respond using that standard.
 - **Longitudinal use, dependence signals, or three same-goal sessions without
   movement:** read
-  [continuity-and-dependence.md](references/continuity-and-dependence.md).
+  [continuity-and-dependence.md](references/continuity-and-dependence.md). On a
+  dependence or stagnation trigger, the first response must not offer an
+  exercise, affirmation, or replacement reassurance technique; name the
+  checkpoint, begin the fit or barrier review, and discuss live support.
 - **Structured session:** read
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a psychological method:** read
@@ -36,7 +39,10 @@ preselected method.
   starting registry, then apply the evidence policy before selecting or
   interpreting a measure.
 - **Safety concern:** immediately read
-  [safety-and-escalation.md](references/safety-and-escalation.md).
+  [safety-and-escalation.md](references/safety-and-escalation.md). For acute
+  overload, first ask the physical-danger, urgent-symptom, and ability-to-stay-
+  safe check; in that same response, conditionally offer one permission-based
+  orientation step only after the user confirms all three.
 - **Journal or files:** first read the mandatory bundled
   [privacy.md](references/privacy.md).
 - **Sexuality or sexual health:** read

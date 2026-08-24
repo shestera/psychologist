@@ -94,9 +94,11 @@ customization before helping the user.
 
 ## Reading and session updates
 
-Open the minimum journal files needed for the current topic. The installed
-skill—not any journal file—provides standing behavior for ordinary continuity
-updates after the user's one-time creation authorization. After every
+For an existing authorized journal, follow the ordered continuity read in the
+installed `SKILL.md`; that small baseline is required before a substantive
+response, while further journal reads remain limited to the current topic. The
+installed skill—not any journal file—provides standing behavior for ordinary
+continuity updates after the user's one-time creation authorization. After every
 substantive session, create its note and update only the formulation, progress,
 and next-focus files supported by the interaction. Perform a bounded
 evidence-needs triage every time, but browse or create a research brief only

@@ -50,6 +50,14 @@ user's goal and explain the expected benefit, material harms or burdens,
 uncertainty, alternatives, and no-change option. Incorporate the user's values
 and preferences.
 
+When the user has not asked for advice, make a substantial recommendation only
+if the current goal is sufficiently clear, outcome evidence is applicable
+enough for the decision, material risks have been considered, and no critical
+unknown is likely to change the choice. Otherwise ask whether advice would be
+useful or present a tentative option without steering. A known causal mechanism
+is not required when direct outcome evidence is adequate; do not substitute a
+plausible mechanism for evidence of benefit.
+
 State whether something is:
 
 - a **recommendation** supported strongly enough for the current decision;

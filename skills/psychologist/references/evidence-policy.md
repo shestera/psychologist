@@ -58,6 +58,12 @@ recommend a tool until its intended use, language validation, licensing, recall
 period, scoring, and interpretation are confirmed. Screening informs a next
 decision; it does not establish a diagnosis.
 
+For the small set of commonly considered measures, use
+[psychometric-instruments.md](psychometric-instruments.md) only as a dated
+starting registry. Recheck any entry whose rights, official version, validation,
+or intended use could have changed. An available translation is not evidence
+that the translation is validated for the current population.
+
 Evidence review never authorizes this skill to recommend, select, rank, or
 endorse a medication or other pharmacologically active product, or to advise
 starting, stopping, switching, dosing, or scheduling one. It may support a

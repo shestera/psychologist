@@ -46,12 +46,15 @@ active APA policy, or authority for this AI journal.
   evidence about that measure, not by itself a diagnosis or proof of cause.
 - `assessment-plan.md`, `next-session-plan.md`, `therapy-backlog.md`,
   `assistant-preferences.md`, and `journal-gitignore.md` are project controls
-  rather than internationally standardized clinical formats. `method-note.md`
-  is the review record for a journal-specific supplemental method, not a
-  treatment manual or evidence of recognition; its append-only revision table
-  keeps method changes transparent without a separate local changelog. Together
-  they preserve purpose, consent, continuity, privacy, alternatives, and the
-  installed skill's absolute medication-recommendation boundary.
+  rather than internationally standardized clinical formats. The assessment
+  plan records the exact language and version, rights check, validation limits,
+  burden, and permission so a measure is not selected from a score label alone.
+  `method-note.md` is the review record for a journal-specific supplemental
+  method, not a treatment manual or evidence of recognition; its append-only
+  revision table keeps method changes transparent without a separate local
+  changelog. Together they preserve purpose, consent, continuity, privacy,
+  alternatives, and the installed skill's absolute medication-recommendation
+  boundary.
 
 ## Application rules
 

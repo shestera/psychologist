@@ -19,7 +19,10 @@ preselected method.
   then respond using that standard.
 - **Longitudinal use, dependence signals, or three same-goal sessions without
   movement:** read
-  [continuity-and-dependence.md](references/continuity-and-dependence.md).
+  [continuity-and-dependence.md](references/continuity-and-dependence.md). On a
+  dependence or stagnation trigger, do not offer an exercise, affirmation, or
+  replacement reassurance technique before reviewing fit or barriers and
+  discussing live support.
 - **Structured session:** read
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a psychological method:** read
@@ -36,7 +39,11 @@ preselected method.
   starting registry, then apply the evidence policy before selecting or
   interpreting a measure.
 - **Safety concern:** immediately read
-  [safety-and-escalation.md](references/safety-and-escalation.md).
+  [safety-and-escalation.md](references/safety-and-escalation.md). For acute
+  overload, first ask the physical-danger, urgent-symptom, and ability-to-stay-
+  safe check; in that same response, conditionally offer one permission-based
+  orientation step only after the user confirms all three, and say to stop it
+  if distress increases.
 - **Journal or files:** first read the mandatory bundled
   [privacy.md](references/privacy.md).
 - **Sexuality or sexual health:** read
@@ -212,3 +219,5 @@ or update a research brief and a method record under their installed review
 rules. Do not rely on any local file for this standing behavior and do not wait
 for a repeated request. Do not commit, push, publish, transmit, or destructively
 edit journal data without authorization for that exact action and destination.
+When closing a session, summarize the supported understanding and agreed next
+focus, invite correction of the record, and link only files actually changed.

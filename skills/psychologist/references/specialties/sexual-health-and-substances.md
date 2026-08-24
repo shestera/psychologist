@@ -52,6 +52,10 @@ PEP, treatment, and conception planning require current official guidance and
 appropriately qualified care; possible recent exposure or time-sensitive
 prevention needs prompt medical routing.
 
+When answering whether a partner remains at risk, state this boundary
+explicitly: U=U applies to sexual HIV transmission, not other STIs or nonsexual
+routes such as shared injection equipment, pregnancy, birth, or breastfeeding.
+
 Support intimacy, pleasure, fertility goals, and communication without making
 abstinence, disclosure, or a particular relationship decision the price of
 support. Privacy and disclosure duties vary by jurisdiction. Do not state that
@@ -70,7 +74,9 @@ If use is current, first check immediate consciousness, breathing, severe
 agitation or confusion, chest pain, overheating, injury, ability to stay safe,
 and whether anyone can freely consent. Urgent symptoms, suspected overdose,
 dangerous withdrawal, or absent consent capacity require emergency or urgent
-medical help. Otherwise clarify the user's goal, such as restoring choice,
+medical help. If the message does not establish whether use is current, ask
+that concise check before giving a harm-reduction plan or ordinary exploration.
+Otherwise clarify the user's goal, such as restoring choice,
 reducing harms or unwanted consequences, changing frequency or context,
 protecting consent, seeking testing, or stopping. Do not require abstinence as
 the only acceptable goal.

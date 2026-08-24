@@ -20,11 +20,12 @@ preselected method.
 - **Longitudinal use, dependence signals, or three same-goal sessions without
   movement:** read
   [continuity-and-dependence.md](references/continuity-and-dependence.md). On a
-  dependence or stagnation trigger, the first response must not offer an
-  exercise, affirmation, or replacement reassurance technique; name the
-  checkpoint, including three same-goal sessions without movement when that is
-  what the records show, begin the fit or barrier review, and discuss live
-  support.
+  dependence or stagnation trigger in an authorized journal, read existing
+  `progress.md` and `next-session.md` before responding. The first response
+  must not offer an exercise, affirmation, or replacement reassurance
+  technique; name the checkpoint, including three same-goal sessions without
+  movement when that is what the records show, begin the fit or barrier review,
+  and discuss live support.
 - **Structured session:** read
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a psychological method:** read

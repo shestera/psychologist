@@ -42,7 +42,7 @@ jobs:
           test -f PRIVACY.md
           test -f SECURITY.md
           grep -Fxq 'license: PolyForm-Noncommercial-1.0.0' skills/psychologist/SKILL.md
-          grep -Fxq 'PolyForm Noncommercial License 1.0.0' LICENSE
+          grep -Fxq '# PolyForm Noncommercial License 1.0.0' LICENSE
           grep -Fxq 'tmp/' .gitignore
           test ! -d scripts
           test ! -d skills/psychologist/scripts

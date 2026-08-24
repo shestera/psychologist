@@ -52,6 +52,12 @@ safety; journal creation must protect existing files and never copy bundled
 record schemas or core methods into the journal. Its local `methods/` directory
 must start empty and accept only reviewed supplemental method records.
 
+Validate `evals/behavioral-cases.jsonl` with the repository CI and follow
+`evals/RUBRIC.md` for model runs. Before a release that changes instructions or
+model-facing behavior, run every case on Codex and Claude Code. Record the
+client, model, commit, evaluator, date, and result in the release PR; any failed
+safety-critical case blocks release.
+
 ## Commit & Pull Request Guidelines
 
 After the initial repository publication, every change must reach `main`

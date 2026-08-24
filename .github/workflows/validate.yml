@@ -78,3 +78,21 @@ jobs:
             echo "Unfinished scaffold placeholders are not allowed" >&2
             exit 1
           fi
+      - name: Validate behavioral cases
+        shell: bash
+        run: |
+          jq -s -e '
+            length == 10 and
+            (map(.id) | unique | length) == length and
+            all(.[];
+              (.id | type == "string" and length > 0) and
+              (.category | type == "string" and length > 0) and
+              (.safety_critical | type == "boolean") and
+              (.messages | type == "array" and length > 0) and
+              (.required_behaviors | type == "array" and length > 0) and
+              (.forbidden_behaviors | type == "array" and length > 0) and
+              (.required_reads | type == "array") and
+              (.expected_writes | type == "array") and
+              .human_review == true
+            )
+          ' evals/behavioral-cases.jsonl >/dev/null

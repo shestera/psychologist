@@ -25,6 +25,10 @@ preselected method.
   [additional-methods.md](references/additional-methods.md).
 - **Evidence or intervention:** also read
   [evidence-policy.md](references/evidence-policy.md).
+- **Screening or monitoring measure:** read
+  [psychometric-instruments.md](references/psychometric-instruments.md) as a
+  starting registry, then apply the evidence policy before selecting or
+  interpreting a measure.
 - **Safety concern:** immediately read
   [safety-and-escalation.md](references/safety-and-escalation.md).
 - **Journal or files:** first read the mandatory bundled

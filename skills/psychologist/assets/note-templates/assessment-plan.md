@@ -17,9 +17,9 @@ confidentiality: sensitive-pseudonymized
 
 ## Measures under consideration
 
-| Measure | Intended use and population | Validation and limits | Burden | Permission | Status |
-| --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |
+| Measure | Intended use and population | Language and version | Rights or license checked | Validation and limits | Burden | Permission | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |
 
 ## Deferred, declined, or stop conditions
 

@@ -41,6 +41,19 @@ Psychology Companion does not claim to be a licensed clinician, provide a
 diagnosis, replace medical care, recommend medications or other
 pharmacologically active products, or perform erotic roleplay.
 
+This non-diagnostic, non-treating boundary is an intentional product-scope
+decision. Psychology Companion is intended for reflection, general information,
+and lifestyle or well-being support, not for a specific medical purpose such as
+diagnosis, prevention, monitoring, prediction, prognosis, treatment, or
+alleviation of disease. Under the EU Medical Device Regulation, software
+qualification depends on the manufacturer's intended purpose, including claims
+in instructions and promotional materials; general-purpose and lifestyle or
+well-being software is distinguished from software intended for a medical
+purpose. See [MDR Article 2 and recital 19](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng)
+and [MDCG 2019-11 rev. 1](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf).
+This is a product-scope statement, not a legal determination, compliance
+certification, or substitute for jurisdiction-specific advice.
+
 ## Install from the repository marketplace
 
 The repository is both the plugin package and its marketplace. The marketplace
@@ -74,6 +87,9 @@ claude plugin install psychologist@psychologist-plugins
 
 Start a new Claude Code session, then use
 `/psychologist:psychologist` or describe a relevant concern normally.
+Current Claude Code exposes plugin skills from `skills/` as namespaced slash
+invocations, so this does not require a duplicate `commands/` entry; see the
+[Claude Code plugin documentation](https://code.claude.com/docs/en/plugins#add-skills-to-your-plugin).
 
 ## Local development without a marketplace
 
@@ -127,7 +143,7 @@ skill or its bundled privacy and security policy.
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychologist
 python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 claude plugin validate --strict .
-jq -s -e 'length == 10 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
+jq -s -e 'length == 20 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
 find . -path ./.git -prune -o -path ./tmp -prune -o -type f -perm -111 -print
 rg --files -g '!tmp/**' | rg -i '\.(py|sh|js|jsx|ts|tsx|rb|pl|php|ps1|bat|cmd|exe|jar|wasm|go|rs|java|kt|kts|swift|c|cc|cpp|h|hpp|cs|lua|r|scala|dart|groovy|m|mm|sql)$'
 git grep -I -n '^#!'

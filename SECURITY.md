@@ -23,6 +23,16 @@ mandatory journal policy stays in
 `skills/psychologist/references/privacy.md` and is not copied into an editable
 journal.
 
+The skill intentionally omits `allowed-tools`. In Claude Code that frontmatter
+field pre-approves listed tools; it does not restrict unlisted tools or block
+Bash. A skill-scoped deny cannot therefore be created with that field. Users or
+administrators who need a mechanical Bash or network restriction must enforce
+it in the host's permission and sandbox policy. See Claude Code's
+[skill tool-permission semantics](https://code.claude.com/docs/en/slash-commands#pre-approve-tools-for-a-skill)
+and [deny-rule documentation](https://code.claude.com/docs/en/permissions).
+The installed skill still forbids executing code from itself or a journal
+during journal creation.
+
 Journal creation must remain opt-in, non-destructive, and local. Changes that
 add networking, analytics, automatic Git operations, destructive file behavior,
 or external storage require an explicit privacy and threat review.

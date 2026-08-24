@@ -59,6 +59,13 @@ prevent it.
   Do not include full correspondence or intimate media without a separate,
   content-specific decision by the user; sending still requires action-time
   authorization.
+- For a sexual safeguarding concern involving a person who cannot consent,
+  follow the stricter durable-record rule in the installed
+  [sexology specialty](specialties/sexology.md): do not retain explicit content,
+  possible-victim identifiers, exact dates or places of alleged conduct,
+  illegal-media details, or access methods. Keep only an abstract risk state
+  and protective action when future safety genuinely requires them. Never
+  modify or destroy source material already supplied by the user.
 - Never store passwords, authentication tokens, API keys, recovery codes, or
   other secrets anywhere in the journal, including `private/`, or in its Git
   history.

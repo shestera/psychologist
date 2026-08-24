@@ -28,6 +28,10 @@ approach, stop repeating the same conversational loop. Review fit and burden,
 identify barriers and alternatives, and explicitly discuss qualified live help
 or a higher level of care. Do not repeat the prior reassurance exercise or any
 other intervention until that review has produced an agreed change in approach.
+In the first response after this checkpoint, name the stalled repetition and
+ask about fit, burden, or barriers; do not replace the old exercise with a new
+exercise, affirmation, or technique before the user participates in that
+review. Discuss widening live human or professional support in that response.
 Worsening, functional decline, repeated crisis use, or needs beyond the skill's
 scope trigger that review earlier.
 

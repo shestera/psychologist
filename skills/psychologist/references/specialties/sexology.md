@@ -144,8 +144,9 @@ Name coercion or deception directly without shaming the user.
 Consent to create or possess intimate material is not consent to publish or
 distribute it. Do not help publish, anonymize, conceal attribution, or evade
 detection without every depicted adult's explicit current authorization.
-Privacy, image-based-abuse law, and platform rules vary by jurisdiction; say so
-and verify current local rules before giving legal guidance.
+Always state that privacy, image-based-abuse law, and platform rules vary by
+jurisdiction and require current local verification when legal guidance
+matters, even when the immediate response is only a refusal and safer options.
 
 ## Medical and safety triage
 

@@ -1,0 +1,160 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: New stable SemVer version without the v prefix
+        required: true
+        type: string
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+concurrency:
+  group: psychologist-release
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate release version
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          if [[ ! "$RELEASE_VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+            echo "Version must be stable SemVer without the v prefix" >&2
+            exit 1
+          fi
+          python3 -c 'import json, os; from pathlib import Path; current=json.loads(Path(".codex-plugin/plugin.json").read_text())["version"]; requested=os.environ["RELEASE_VERSION"]; assert tuple(map(int, requested.split("."))) > tuple(map(int, current.split("."))), f"version must be greater than {current}"'
+          if git rev-parse --verify --quiet "refs/tags/v$RELEASE_VERSION"; then
+            echo "Tag v$RELEASE_VERSION already exists" >&2
+            exit 1
+          fi
+          if git ls-remote --exit-code --heads origin "refs/heads/release/v$RELEASE_VERSION"; then
+            echo "Branch release/v$RELEASE_VERSION already exists" >&2
+            exit 1
+          fi
+
+      - name: Update release metadata
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          jq --arg version "$RELEASE_VERSION" '.version = $version' \
+            .codex-plugin/plugin.json > .codex-plugin/plugin.json.tmp
+          mv .codex-plugin/plugin.json.tmp .codex-plugin/plugin.json
+
+          jq --arg version "$RELEASE_VERSION" '.version = $version' \
+            .claude-plugin/plugin.json > .claude-plugin/plugin.json.tmp
+          mv .claude-plugin/plugin.json.tmp .claude-plugin/plugin.json
+
+          jq --arg version "$RELEASE_VERSION" --arg ref "v$RELEASE_VERSION" \
+            '.plugins[0].version = $version | .plugins[0].source.ref = $ref' \
+            .claude-plugin/marketplace.json > .claude-plugin/marketplace.json.tmp
+          mv .claude-plugin/marketplace.json.tmp .claude-plugin/marketplace.json
+
+          jq --arg ref "v$RELEASE_VERSION" \
+            '.plugins[0].source.ref = $ref' \
+            .agents/plugins/marketplace.json > .agents/plugins/marketplace.json.tmp
+          mv .agents/plugins/marketplace.json.tmp .agents/plugins/marketplace.json
+
+      - name: Validate release metadata
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          python3 -m json.tool .codex-plugin/plugin.json >/dev/null
+          python3 -m json.tool .claude-plugin/plugin.json >/dev/null
+          python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
+          python3 -m json.tool .claude-plugin/marketplace.json >/dev/null
+          python3 -c 'import json, os; from pathlib import Path; version=os.environ["RELEASE_VERSION"]; tag=f"v{version}"; codex=json.loads(Path(".codex-plugin/plugin.json").read_text()); claude=json.loads(Path(".claude-plugin/plugin.json").read_text()); openai_market=json.loads(Path(".agents/plugins/marketplace.json").read_text()); claude_market=json.loads(Path(".claude-plugin/marketplace.json").read_text()); assert codex["version"] == version; assert claude["version"] == version; assert claude_market["plugins"][0]["version"] == version; assert openai_market["plugins"][0]["source"]["ref"] == tag; assert claude_market["plugins"][0]["source"]["ref"] == tag'
+          git diff --check
+
+      - name: Open release pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          release_branch="release/v$RELEASE_VERSION"
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git switch -c "$release_branch"
+          git add \
+            .agents/plugins/marketplace.json \
+            .claude-plugin/marketplace.json \
+            .claude-plugin/plugin.json \
+            .codex-plugin/plugin.json
+          git commit -m "chore(release): prepare v$RELEASE_VERSION"
+          git push --set-upstream origin "$release_branch"
+          gh pr create \
+            --base main \
+            --head "$release_branch" \
+            --title "chore(release): prepare v$RELEASE_VERSION" \
+            --body "Updates plugin manifests and tag-pinned marketplace sources to v$RELEASE_VERSION. Merge this pull request with squash merge to publish the release automatically."
+          gh api \
+            --method POST \
+            "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
+            -f state=success \
+            -f context=release-checks \
+            -f description="Release metadata validated by the Release workflow"
+
+  publish:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.base.ref == 'main' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'release/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate merged release
+        env:
+          RELEASE_BRANCH: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          release_version="${RELEASE_BRANCH#release/v}"
+          if [[ ! "$release_version" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+            echo "Release branch must end with a stable SemVer version" >&2
+            exit 1
+          fi
+          RELEASE_VERSION="$release_version" python3 -c 'import json, os; from pathlib import Path; version=os.environ["RELEASE_VERSION"]; tag=f"v{version}"; codex=json.loads(Path(".codex-plugin/plugin.json").read_text()); claude=json.loads(Path(".claude-plugin/plugin.json").read_text()); openai_market=json.loads(Path(".agents/plugins/marketplace.json").read_text()); claude_market=json.loads(Path(".claude-plugin/marketplace.json").read_text()); assert codex["version"] == version; assert claude["version"] == version; assert claude_market["plugins"][0]["version"] == version; assert openai_market["plugins"][0]["source"]["ref"] == tag; assert claude_market["plugins"][0]["source"]["ref"] == tag'
+
+      - name: Tag and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_BRANCH: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          release_version="${RELEASE_BRANCH#release/v}"
+          release_tag="v$release_version"
+          if git rev-parse --verify --quiet "refs/tags/$release_tag"; then
+            test "$(git rev-list -n 1 "$release_tag")" = "$(git rev-parse HEAD)"
+          else
+            git config user.name github-actions[bot]
+            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            git tag -a "$release_tag" -m "Psychologist $release_tag"
+            git push origin "$release_tag"
+          fi
+          if ! gh release view "$release_tag" >/dev/null 2>&1; then
+            gh release create "$release_tag" \
+              --verify-tag \
+              --title "Psychologist $release_tag" \
+              --generate-notes

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Psychologist"
+  short_description: "Professional, evidence-aware reflection"
+  default_prompt: "Use $psychologist to help me understand this situation and choose a realistic next step."
+policy:
+  allow_implicit_invocation: true

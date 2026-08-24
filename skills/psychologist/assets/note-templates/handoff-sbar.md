@@ -1,0 +1,32 @@
+---
+document_type: handoff
+date: YYYY-MM-DD
+status: draft-awaiting-authorization
+confidentiality: recipient-specific
+---
+
+# Minimal Handoff — SBAR
+
+## Recipient, purpose, and user authorization
+
+## S — Situation
+
+Current reason for the handoff and the decision or help being requested.
+
+## B — Background
+
+Only the minimum relevant history, with sources and uncertainty labeled.
+
+## A — Assessment
+
+Current concerns, functional effects, working hypotheses, alternatives, and
+known safety information. Do not present an AI-generated diagnosis.
+
+## R — Request or recommendation for recipient assessment
+
+Questions or needs for the qualified recipient to evaluate independently.
+
+## Excluded information
+
+Identify sensitive or unnecessary material intentionally omitted. Do not send
+the handoff without separate action-time authorization.

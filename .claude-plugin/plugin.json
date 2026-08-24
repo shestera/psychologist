@@ -1,0 +1,19 @@
+{
+  "name": "psychologist",
+  "description": "A professional, evidence-aware psychological assistant with a sexology specialty and private long-term journal.",
+  "version": "0.1.0",
+  "author": {
+    "name": "shestera",
+    "url": "https://github.com/shestera"
+  },
+  "homepage": "https://github.com/shestera/psychologist",
+  "repository": "https://github.com/shestera/psychologist",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "psychology",
+    "wellbeing",
+    "relationships",
+    "sexology",
+    "journaling"
+  ]
+}

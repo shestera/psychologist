@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "psychologist-plugins",
+  "owner": {
+    "name": "shestera"
+  },
+  "description": "Plugins maintained by shestera.",
+  "plugins": [
+    {
+      "name": "psychologist",
+      "source": {
+        "source": "github",
+        "repo": "shestera/psychologist",
+        "ref": "v0.1.0"
+      },
+      "description": "A professional, evidence-aware psychological assistant with a sexology specialty and private long-term journal.",
+      "version": "0.1.0",
+      "author": {
+        "name": "shestera"
+      },
+      "homepage": "https://github.com/shestera/psychologist",
+      "repository": "https://github.com/shestera/psychologist",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "keywords": [
+        "psychology",
+        "wellbeing",
+        "relationships",
+        "sexology",
+        "journaling"
+      ]
+    }
+  ]
+}

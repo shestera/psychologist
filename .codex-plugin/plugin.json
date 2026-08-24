@@ -1,0 +1,38 @@
+{
+  "name": "psychologist",
+  "version": "0.1.0",
+  "description": "A professional, evidence-aware psychological assistant with a sexology specialty and private long-term journal.",
+  "author": {
+    "name": "shestera",
+    "url": "https://github.com/shestera"
+  },
+  "homepage": "https://github.com/shestera/psychologist",
+  "repository": "https://github.com/shestera/psychologist",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "psychology",
+    "wellbeing",
+    "relationships",
+    "sexology",
+    "journaling"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Psychologist",
+    "shortDescription": "Professional, evidence-aware reflection",
+    "longDescription": "A psychological assistant for emotional reflection, recurring patterns, relationships, and sexuality. It uses professional, empathic, collaborative communication, separates evidence from hypotheses, and maintains continuity in a dedicated private journal.",
+    "developerName": "shestera",
+    "category": "Lifestyle",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/shestera/psychologist",
+    "privacyPolicyURL": "https://github.com/shestera/psychologist/blob/main/PRIVACY.md",
+    "defaultPrompt": [
+      "Help me understand what I am feeling and what to do next.",
+      "Let's examine a recurring relationship pattern.",
+      "Help me explore a concern about sexuality without judgment."
+    ]
+  }
+}

@@ -25,6 +25,14 @@ schemas. It:
   method records, never local rules or copies of core methods; and
 - does not execute code bundled with the skill.
 
+If the authorized journal root is already its own Git repository, closing a
+substantive session automatically creates a local commit only when the
+session's changed paths are isolated from pre-existing work and pass privacy
+checks. The commit message is generic. The plugin never initializes Git, stages
+unrelated changes, rewrites history, tags, pushes, or contacts a remote as part
+of session closure; if the protected commit cannot be made, changes remain
+uncommitted and the blocker is reported.
+
 The mandatory
 [privacy and journal security policy](skills/psychologist/references/privacy.md)
 stays inside the installed skill. It is not copied into the journal, where it

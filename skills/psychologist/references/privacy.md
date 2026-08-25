@@ -143,8 +143,27 @@ progress, next-focus, research, and supplemental-method records only when each
 was actually changed. Never add unchanged links for completeness or require the
 user to search the journal tree for the result.
 
-Do not create a commit automatically. It requires current-task authorization
-for that exact journal and content.
+### Protected automatic local commit
+
+Closing a substantive session includes a local commit without another prompt
+when all of these conditions pass:
+
+- the authorized journal root is exactly the root of an existing Git
+  repository; never initialize Git or use a parent repository;
+- Git tools are available, there is no merge, rebase, conflict, or detached
+  worktree state, and the pre-write status was inspected;
+- every path to stage was created or changed by the current session and none of
+  those paths had pre-existing uncommitted changes;
+- unrelated pre-existing changes remain unstaged, and the staged path list and
+  diff are verified before committing;
+- the staged content passes the installed minimization and secret rules.
+
+Use a generic message such as `docs(journal): record session YYYY-MM-DD-NN`;
+never expose a topic, diagnosis, identity, or intimate detail in commit
+metadata. If there is no change or any condition fails, leave all changes
+uncommitted and report the specific blocker rather than asking the user to
+approve an unsafe or ambiguous commit. Never amend, rewrite history, tag, push,
+or contact a remote as part of this behavior.
 
 ## Git, sharing, and other external actions
 
@@ -153,10 +172,11 @@ user understands that deleting a working file does not erase history, remotes,
 backups, provider retention, or exports. Verify the exact remote owner and
 visibility immediately before any first push.
 
-Every commit, push, publication, handoff, upload, or message requires
-authorization for that exact operation, destination, and content. Never rewrite
-history, transmit data, or perform a destructive action without equally exact
-authorization.
+The protected session-close commit above is the only standing local Git action.
+Every other commit and every push, publication, handoff, upload, or message
+requires authorization for that exact operation, destination, and content.
+Never rewrite history, transmit data, or perform a destructive action without
+equally exact authorization.
 
 For a handoff, create a new minimal document for the stated recipient and
 purpose; never copy the journal. Ask before including sensitive sexual,

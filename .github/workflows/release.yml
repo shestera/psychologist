@@ -7,6 +7,11 @@ on:
         description: New stable SemVer version without the v prefix
         required: true
         type: string
+      publish_existing_tag:
+        description: Recovery only - publish an existing validated tag
+        required: false
+        default: false
+        type: boolean
   pull_request:
     types: [closed]
 
@@ -21,7 +26,7 @@ concurrency:
 
 jobs:
   prepare:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_existing_tag != true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -158,3 +163,48 @@ jobs:
               --verify-tag \
               --title "Psychology Companion $release_tag" \
               --generate-notes
+          fi
+
+  recover-publish:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_existing_tag == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate existing release tag
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          if [[ ! "$RELEASE_VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+            echo "Version must be stable SemVer without the v prefix" >&2
+            exit 1
+          fi
+          release_tag="v$RELEASE_VERSION"
+          RELEASE_VERSION="$RELEASE_VERSION" python3 -c 'import json, os; from pathlib import Path; version=os.environ["RELEASE_VERSION"]; tag=f"v{version}"; codex=json.loads(Path(".codex-plugin/plugin.json").read_text()); claude=json.loads(Path(".claude-plugin/plugin.json").read_text()); openai_market=json.loads(Path(".agents/plugins/marketplace.json").read_text()); claude_market=json.loads(Path(".claude-plugin/marketplace.json").read_text()); assert codex["version"] == version; assert claude["version"] == version; assert claude_market["plugins"][0]["version"] == version; assert openai_market["plugins"][0]["source"]["ref"] == tag; assert claude_market["plugins"][0]["source"]["ref"] == tag'
+          git rev-parse --verify "refs/tags/$release_tag^{commit}" >/dev/null
+          git merge-base --is-ancestor "$release_tag" HEAD
+          git diff --quiet "$release_tag"..HEAD -- \
+            .agents/plugins/marketplace.json \
+            .claude-plugin/marketplace.json \
+            .claude-plugin/plugin.json \
+            .codex-plugin/plugin.json
+
+      - name: Publish existing release tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          release_tag="v$RELEASE_VERSION"
+          if gh release view "$release_tag" >/dev/null 2>&1; then
+            echo "Release $release_tag already exists"
+            exit 0
+          fi
+          gh release create "$release_tag" \
+            --verify-tag \
+            --title "Psychology Companion $release_tag" \
+            --generate-notes

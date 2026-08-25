@@ -97,6 +97,13 @@ by role and jurisdiction, so verify them rather than promising secrecy or
 claiming that a report is always or never required. This plugin cannot contact
 services itself.
 
+Do not default to a US number or another country-specific service before the
+location is known. Do not tell the user they are probably a mandated reporter,
+that reporting is nonoptional, or that a particular deadline applies before
+their role and current local law are verified. When danger may be immediate,
+direct them to their local emergency or child-protection service first and ask
+location and role only to identify the correct official route.
+
 ## Abuse, coercion, and sexual violence
 
 Validate the person's right to safety without pressuring them into a disclosure

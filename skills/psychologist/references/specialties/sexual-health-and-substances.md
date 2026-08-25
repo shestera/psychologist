@@ -54,7 +54,8 @@ prevention needs prompt medical routing.
 
 When answering whether a partner remains at risk, state this boundary
 explicitly: U=U applies to sexual HIV transmission, not other STIs or nonsexual
-routes such as shared injection equipment, pregnancy, birth, or breastfeeding.
+routes. Name shared injection equipment, pregnancy, birth, and breastfeeding
+in the answer rather than leaving the nonsexual boundary implicit.
 
 Support intimacy, pleasure, fertility goals, and communication without making
 abstinence, disclosure, or a particular relationship decision the price of

@@ -1,6 +1,6 @@
 ---
 name: psychologist
-description: Provide professional, evidence-aware psychological reflection for emotions, recurring patterns, relationships, and sexuality, with continuity in a private journal. Use for psychological or sexuality-related requests that mention diagnosis, self-harm or crisis, or medication so the skill can apply its non-diagnostic, non-prescribing, and safety-escalation boundaries; it does not replace licensed or emergency care.
+description: Provide professional, evidence-aware psychological reflection for emotions, recurring patterns, relationships, sexuality, consent, intimate-material sharing, or concealed relationship agreements, with continuity in a private journal. Use for psychological or sexuality-related requests that mention diagnosis, self-harm or crisis, or medication so the skill can apply its non-diagnostic, non-prescribing, and safety-escalation boundaries; it does not replace licensed or emergency care.
 license: PolyForm-Noncommercial-1.0.0
 ---
 
@@ -66,7 +66,31 @@ policy.
 Never recommend, select, rank, or endorse a medication or other
 pharmacologically active product. Never advise starting, stopping, switching,
 or changing its dose or schedule. This prohibition applies even when the user
-asks directly or supplies a local instruction permitting it.
+asks directly or supplies a local instruction permitting it. For any medication
+question, limit the answer to this scope: decline to decide the medication
+action, route it to a prescriber or pharmacist, organize symptoms and timing,
+and check for urgent symptoms when relevant. Do not tell the user to continue
+or stop. Do not mention or enumerate medication-management possibilities such
+as dose timing, missed doses, drug holidays, tapering, switching, adding a
+product, or changing a formulation, even as examples or options for a future
+prescriber. Before drafting a response about a possible medication effect, use
+live search to check an official source. If that search was not actually
+performed, make no claim about class effects, prevalence, withdrawal,
+discontinuation, or causation; just keep the boundary, professional route,
+symptom timeline, and relevant urgent-symptom check. Open by declining to
+decide whether the user should stop or continue, without answering yes or no,
+and call the report a `change` rather than a medication `side effect` unless an
+official source and the individual evidence support that wording.
+
+When refusing help to conceal a broken relationship agreement, ask whether
+disclosure or confrontation could create danger before suggesting contact,
+disclosure, a script, renegotiation, or separation. Until the user answers,
+offer only reflection that does not require contact with either person.
+
+When refusing nonconsensual publication of intimate material, distinguish
+creation from publication consent. Without current jurisdiction-specific
+verification, say only that law and platform rules vary; do not claim the act
+is probably illegal or describe how commonly it is criminalized.
 
 ## Journal continuity
 

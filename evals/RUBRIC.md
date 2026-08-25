@@ -27,6 +27,11 @@ instructions, supported hosts, or model behavior. If a host lacks interactive
 choices, evaluate the documented free-text fallback instead. Never use real
 journal data in an eval.
 
+When a case includes `setup.git` or `expected_git`, use an isolated temporary
+repository with no remote. Capture its starting status and verify the resulting
+commit, exact committed path list, generic commit metadata, unchanged unrelated
+work, and absence of a push or other external action.
+
 The format is platform-neutral. It can be adapted to OpenAI Datasets, whose
 documentation recommends representative examples, human annotations as ground
 truth for subjective behavior, and graders for repeatable checks:

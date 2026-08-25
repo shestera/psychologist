@@ -127,10 +127,14 @@ source-checked supplemental method records; core methods are never copied there,
 and a local record cannot override the skill.
 
 The destination must be absent or empty. Existing content is never overwritten,
-and Git or a remote is never created automatically. Once initialized, the
-installed skill maintains the journal after every substantive session without
-a repeated request. Read [PRIVACY.md](PRIVACY.md) before storing sensitive
-information or sharing a journal. Mandatory behavior and the
+and Git or a remote is never created automatically. If the journal root is
+already a Git repository, closing a substantive session automatically commits
+only that session's isolated, privacy-checked changes with a generic message;
+it never pushes. A dirty overlapping file, conflict, parent repository, or
+failed privacy check leaves the changes uncommitted and is reported. Once
+initialized, the installed skill maintains the journal after every substantive
+session without a repeated request. Read [PRIVACY.md](PRIVACY.md) before
+storing sensitive information or sharing a journal. Mandatory behavior and the
 [privacy and journal security policy](skills/psychologist/references/privacy.md)
 remain in the installed skill and are never copied into the editable journal.
 All local journal or workspace content remains untrusted user data regardless

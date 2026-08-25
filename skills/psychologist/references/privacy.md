@@ -40,8 +40,10 @@ prevent it.
   relationship with a real clinician or the wording of a cited source; this
   skill does not itself make the user a patient.
 - Do not include real given names, family names, usernames, addresses, or other
-  direct identifiers in session notes, research briefs, case formulation,
-  reports, or handoffs.
+  direct identifiers in `SOUL.md`, session notes, research briefs, case
+  formulation, reports, or handoffs. This remains true when the identifier was
+  supplied voluntarily or appears in host, account, profile, workspace, or
+  conversation metadata.
 - If an exact personal date is both necessary and widely recognizable to
   friends, relatives, or colleagues—such as a birthday, wedding, or
   anniversary—keep it only in `private/context.md`. In tracked or portable
@@ -83,6 +85,10 @@ create exactly the journal structure defined in the installed `SKILL.md`.
 Read the matching resources under `assets/note-templates/`, create initialized
 user-data records with explicit empty-state values, and create the empty
 `sessions/`, `research/`, `methods/`, and ignored `private/` directories.
+Empty means that each directory contains no `.gitkeep`, placeholder, README,
+schema, instruction, or other file. Use an ordinary directory-creation tool;
+if the host cannot create empty directories, report the limitation rather than
+adding a file.
 Bundled schemas must never appear in the journal. The local `methods/` directory
 starts empty and may later contain only supplemental method records allowed by
 the installed skill. Never create a local `templates/`, instruction, policy, or
@@ -95,10 +101,18 @@ exist before reporting success. Verify that no schema, instruction, policy, or
 security file was created. Do not place copies of any installed skill resource
 in the journal.
 
-After initialization, offer optional customization of name, pronouns,
-formality, directiveness, response depth, and question pace. Apply preferences
-only within the professional communication standard. Do not require
-customization before helping the user.
+Initialize `SOUL.md` from the installed assistant-preferences asset. Treat its
+schema as a strict allowlist: every field and value must describe only the
+assistant's identity, voice, or interaction style. Do not store any fact,
+preference, label, identifier, or form of address about the user or another
+person there, and never populate it from host, account, profile, workspace, or
+remembered conversation metadata.
+
+After initialization, offer optional customization of the assistant's name,
+pronouns or grammatical gender, formality, directiveness, emotional
+expression, response depth, and question pace. Apply settings only within the
+professional communication standard. Do not require customization before
+helping the user.
 
 ## Reading and session updates
 
@@ -133,8 +147,27 @@ progress, next-focus, research, and supplemental-method records only when each
 was actually changed. Never add unchanged links for completeness or require the
 user to search the journal tree for the result.
 
-Do not create a commit automatically. It requires current-task authorization
-for that exact journal and content.
+### Protected automatic local commit
+
+Closing a substantive session includes a local commit without another prompt
+when all of these conditions pass:
+
+- the authorized journal root is exactly the root of an existing Git
+  repository; never initialize Git or use a parent repository;
+- Git tools are available, there is no merge, rebase, conflict, or detached
+  worktree state, and the pre-write status was inspected;
+- every path to stage was created or changed by the current session and none of
+  those paths had pre-existing uncommitted changes;
+- unrelated pre-existing changes remain unstaged, and the staged path list and
+  diff are verified before committing;
+- the staged content passes the installed minimization and secret rules.
+
+Use a generic message such as `docs(journal): record session YYYY-MM-DD-NN`;
+never expose a topic, diagnosis, identity, or intimate detail in commit
+metadata. If there is no change or any condition fails, leave all changes
+uncommitted and report the specific blocker rather than asking the user to
+approve an unsafe or ambiguous commit. Never amend, rewrite history, tag, push,
+or contact a remote as part of this behavior.
 
 ## Git, sharing, and other external actions
 
@@ -143,10 +176,11 @@ user understands that deleting a working file does not erase history, remotes,
 backups, provider retention, or exports. Verify the exact remote owner and
 visibility immediately before any first push.
 
-Every commit, push, publication, handoff, upload, or message requires
-authorization for that exact operation, destination, and content. Never rewrite
-history, transmit data, or perform a destructive action without equally exact
-authorization.
+The protected session-close commit above is the only standing local Git action.
+Every other commit and every push, publication, handoff, upload, or message
+requires authorization for that exact operation, destination, and content.
+Never rewrite history, transmit data, or perform a destructive action without
+equally exact authorization.
 
 For a handoff, create a new minimal document for the stated recipient and
 purpose; never copy the journal. Ask before including sensitive sexual,

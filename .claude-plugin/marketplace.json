@@ -11,10 +11,10 @@
       "source": {
         "source": "github",
         "repo": "shestera/psychologist",
-        "ref": "v0.2.1"
+        "ref": "v0.3.0"
       },
       "description": "A modular psychological assistant with optional private continuity, research, and a sexology specialty.",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "author": {
         "name": "shestera"
       },

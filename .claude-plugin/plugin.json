@@ -1,7 +1,7 @@
 {
   "name": "psychologist",
   "description": "A modular psychological assistant with optional private continuity, research, and a sexology specialty.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": {
     "name": "shestera",
     "url": "https://github.com/shestera"

@@ -72,8 +72,9 @@ appeared.
 ## Method selection
 
 Read [core-methods.md](core-methods.md) before selecting a psychological method.
-If considering a supplemental method, use the available `psychology-research`
-skill for evidence review and `psychology-journal` for any local record.
+If considering a supplemental method, read
+[additional-methods.md](additional-methods.md); it governs evidence requests,
+case-specific selection, and any handoff to the journal.
 
 Select a method only after clarifying the user's goal, the target problem, the
 quality and population fit of outcome evidence, practical burden and harms,
@@ -115,49 +116,4 @@ available `psychology-journal` skill has established longitudinal mode, let it
 perform session notes, continuity updates, handoffs, minimization, and Git.
 When it is unavailable, the conversation is one-off and this framework creates
 no file. Research notes and supplemental-method records additionally require
-the available `psychology-research` skill.
-
-## Evidence and project conventions
-
-- Meta-analysis finds moderate associations between goal consensus,
-  collaboration, and psychotherapy outcome, but the underlying studies do not
-  establish that collaboration alone causes improvement:
-  [Tryon et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30335451/).
-- NICE shared-decision guidance recommends agreeing priorities and available
-  time, connecting options to the person's goals, and discussing benefits,
-  risks, alternatives, and no treatment or no change. At the end of a
-  discussion it recommends stating what was agreed, what happens next, the
-  timescale, and the review point, and offering a written summary. This is
-  healthcare guidance, not validation of this AI session sequence:
-  [NICE NG197](https://www.nice.org.uk/guidance/ng197/chapter/recommendations).
-- When self-harm risk is relevant, NICE guidance prioritizes current safety,
-  needs, and appropriate help rather than prediction from a scale:
-  [NICE NG225](https://www.nice.org.uk/guidance/ng225/chapter/recommendations).
-- Case-formulation reviews support formulation as an organizing practice but
-  find limited evidence that formulation itself improves outcomes:
-  [Easden & Kazantzis, 2018](https://pubmed.ncbi.nlm.nih.gov/28776663/) and
-  [Rainforth & Laurenson, 2014](https://pubmed.ncbi.nlm.nih.gov/23551415/).
-- A multilevel meta-analysis found a small average benefit from progress
-  feedback, with important variation across instruments and settings. This
-  supports proportionate review, not mandatory measurement in every exchange:
-  [de Jong et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33721605/).
-- A randomized trial found that a multi-component memory-support intervention
-  added to cognitive therapy for depression improved recall of prior sessions;
-  it does not isolate a closing summary or establish the same effect in an AI
-  conversation:
-  [Dong et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35963181/).
-- A systematic review of between-session work found that collaboration,
-  flexibility, a convincing rationale, alignment with the client's takeaways,
-  and a written task summary may support engagement. The evidence was mainly
-  from CBT and does not justify imposing exercises:
-  [Kazantzis et al., 2023](https://pubmed.ncbi.nlm.nih.gov/37104804/).
-- AHRQ describes SBAR as an adaptable structured communication framework. The
-  plugin's minimal handoff is an adaptation, not a validated clinical handoff
-  performed by a licensed professional:
-  [AHRQ TeamSTEPPS SBAR](https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html).
-
-Most cited evidence concerns human psychotherapy or healthcare. It can inform
-guardrails and organization but cannot establish equivalent process or outcome
-effects for a general-purpose AI assistant. The exact session order,
-documentation cadence, and file fields above remain transparent project
-conventions.
+returned findings from the available `psychology-research` skill.

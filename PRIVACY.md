@@ -11,9 +11,11 @@ contain sensitive psychological, relationship, sexual, or health information.
 Do not place journals inside this repository, use them as examples, or include
 their content in bug reports.
 
-Persistent storage is provided only when the independently configurable
-`psychology-journal` skill is available and longitudinal mode is selected. If
-it is unavailable, conversations are one-off and no journal operation occurs.
+Persistent storage is provided only by the independently configurable
+`psychology-journal` skill. A verified journal already active as the authorized
+workspace or connected source automatically establishes longitudinal mode and
+standing documentation; the assistant does not ask whether to save each new
+chat. If the skill is unavailable, it cannot read or write that journal.
 
 Journal creation uses the host's ordinary file tools and bundled record schemas.
 It:
@@ -27,7 +29,9 @@ It:
 - keeps bundled record schemas inside the installed skill instead of copying a
   `templates/` directory into the journal;
 - creates an empty `methods/` directory for later source-checked supplemental
-  method records, never local rules or copies of core methods; and
+  method records, never local rules or copies of core methods;
+- initializes minimized session, research, and method indexes so later chats
+  can select exact records without scanning complete archives; and
 - does not execute code bundled with the skill.
 
 If the authorized journal root is already its own Git repository, closing a
@@ -38,14 +42,16 @@ unrelated changes, rewrites history, tags, pushes, or contacts a remote as part
 of session closure; if the protected commit cannot be made, changes remain
 uncommitted and the blocker is reported.
 
-A repository remembered from another conversation is only an unverified
-locator. Before reading it in a new conversation, the assistant offers a short
-consultation without journal access or longitudinal continuity using the
-existing journal. Short mode performs no journal or Git operation. A known
-local checkout is verified only after longitudinal mode is selected; a
-remote-only URL still requires separate permission and a destination before
-clone or fetch. Failure to reconnect an existing journal never authorizes
-creation of a replacement.
+A repository merely remembered from another conversation is an unverified
+locator, not an active journal. It is not opened or contacted until it is
+reconnected. A remote-only URL still requires separate permission and a
+destination before clone or fetch. Failure to reconnect an existing journal
+never authorizes creation of a replacement. Only when no connected or
+remembered journal data is available does the assistant offer an initial choice
+between one-off conversation and creating or connecting longitudinal storage.
+One-off mode performs no journal or Git operation. An explicit request not to
+record overrides standing documentation without authorizing silent deletion of
+an already-written draft.
 
 Raw or identifying sources stay outside Git. The default store is the ignored
 `<journal>/private/` directory on the current device. A missing ignored

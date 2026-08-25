@@ -75,42 +75,43 @@ prevent it.
   Git history. Do not modify an existing source merely because it already
   contains a secret; avoid copying it and report the boundary.
 
-## Remembered journal and conversation mode
+## Connected, remembered, and absent journals
 
-A repository path, URL, owner, or journal fact supplied by host context or
-cross-conversation memory is an unverified locator, not renewed permission to
-open files or contact a remote. The plugin cannot guarantee that a host will
-retain or accurately return such a locator.
+A dedicated journal root already exposed as the current authorized workspace
+or connected source may be verified without reopening the user's original
+creation decision. Resolve it without following a symlink, confirm that it is
+exactly its own Git root when Git is present, and verify the expected journal
+structure before personal reads. Once those checks pass, it is an active
+journal: use longitudinal continuity and standing documentation automatically
+without asking the user to choose short or long again.
 
-When a new conversation exposes a plausible locator for an existing dedicated
-Git journal, apply the two-mode choice in the installed `SKILL.md` before any
-journal access:
+A repository path, URL, owner, or journal fact supplied only by host context or
+cross-conversation memory is an unverified locator, not an active journal and
+not permission to open personal files or contact a remote. The plugin cannot
+guarantee that a host will retain or accurately return such a locator. Use only
+minimum path and structure metadata to determine whether it is the currently
+authorized workspace. Otherwise offer reconnection or a one-off conversation
+without journal access.
 
-- **Short consultation:** use only the current conversation. Do not inspect the
-  path, open journal files, clone, fetch, write records, create a commit, or use
-  personal content remembered from another conversation.
-- **Longitudinal continuity:** the user's selection authorizes verification and
-  reading of an existing local checkout for the current conversation. Resolve
-  the path without following a symlink, confirm that it is exactly its own Git
-  root, and verify the expected journal structure before reading continuity
-  records. Do not search parent repositories or unrelated directories.
-
-If memory provides only a remote URL, longitudinal selection does not by itself
-authorize network access or choose a local destination. State that the
-repository is not locally connected, identify the remote only as precisely as
-needed, and obtain separate permission for the exact clone or fetch operation
-and destination. Verify remote ownership and visibility when the tools expose
-them. Never clone into a non-empty destination, fetch into an unrelated
-checkout, configure a new remote for an existing directory, or push as part of
-reconnection.
+If memory provides only a remote URL, a request to reconnect does not by itself
+authorize network access or choose a local destination. Identify the remote
+only as precisely as needed and obtain separate permission for the exact clone
+or fetch operation and destination. Verify remote ownership and visibility
+when the tools expose them. Never clone into a non-empty destination, fetch
+into an unrelated checkout, configure a new remote for an existing directory,
+or push as part of reconnection.
 
 If the locator is missing, inaccessible, ambiguous, points to multiple
 repositories, or fails the Git-root or journal-structure checks, report the
-specific gap and offer short mode or reconnection. Do not infer that the
-journal does not exist, initialize a replacement, or create a second structure
-without the user's separate explicit choice. A mode selection applies only to
-the current conversation; short mode does not delete or revoke the journal for
-future conversations.
+specific gap and offer reconnection or a one-off conversation without journal
+access. Do not infer that the journal does not exist, initialize a replacement,
+or create a second structure without the user's separate explicit choice.
+
+Only when no connected or remembered journal data is available should the
+assistant present the initial choice between one-off conversation and creating
+or connecting longitudinal storage. `One-off` describes the plugin's no-journal
+branch; it cannot guarantee what a model host independently retains. It uses no
+personal journal content and performs no journal or Git operation.
 
 ## Private-store selection
 
@@ -168,7 +169,8 @@ containing any entry.
 If the destination is absent or empty, use only ordinary host file tools to
 create exactly the journal structure defined in the installed `SKILL.md`.
 Read the matching resources under `assets/note-templates/`, create initialized
-user-data records with explicit empty-state values, and create the empty
+user-data records including `session-index.md`, `research-index.md`, and
+`method-index.md` with explicit empty-state values, and create the empty
 `sessions/`, `research/`, `methods/`, and ignored `private/` directories.
 Empty means that each directory contains no `.gitkeep`, placeholder, README,
 schema, instruction, or other file. Use an ordinary directory-creation tool;
@@ -181,11 +183,13 @@ security directory or file. Never execute code from the skill or journal,
 overwrite existing content, access the network, initialize Git, or configure a
 remote during creation.
 
-Verify that `SOUL.md`, all continuity files, and the four data directories
-exist before reporting a newly initialized journal complete. When verifying a
-cloned journal, missing ignored `private/` is allowed. Verify that no schema,
-instruction, policy, or security file was created. Do not place copies of any
-installed skill resource in the journal.
+Verify that `SOUL.md`, all three indexes, all other continuity files, and the
+four data directories exist before reporting a newly initialized journal
+complete. When verifying an existing or cloned legacy journal, any missing
+index is allowed and follows the installed skill's opt-in backfill rule;
+missing ignored `private/` is also allowed. Verify that no schema, instruction,
+policy, or security file was created. Do not place copies of any installed
+skill resource in the journal.
 
 Initialize `SOUL.md` from the installed assistant-preferences asset. Treat its
 schema as a strict allowlist: every field and value must describe only the
@@ -202,20 +206,37 @@ helping the user.
 
 ## Reading and session updates
 
-When longitudinal mode is active for the current conversation, follow the
+When an active journal establishes longitudinal mode, follow the
 ordered continuity read in the installed `SKILL.md`; that small baseline is
 required before a substantive response, while further journal reads remain
-limited to the current topic. The installed skill—not any journal file—provides
-standing behavior for ordinary continuity updates in that mode after the
-user's one-time creation authorization. After every substantive session,
-create its note and update only the formulation, progress, and next-focus files
-supported by the interaction. Perform a bounded evidence-needs triage every
-time, but invoke `psychology-research` and create a brief only when that skill
-is currently available and a material question could change safety,
-explanation, referral, or practical approach. Change a supplemental method
-record only through that available skill when the practical approach or
-evidence status changes; append its revision history rather than rewriting an
-earlier decision.
+limited to records selected by `session-index.md`, `research-index.md`, and
+`method-index.md` for the current topic. Never enumerate a record directory when
+its index can select the target. The installed skill—not any journal file—
+provides standing behavior for ordinary continuity updates after the user's
+one-time creation or connection authorization. Do not ask whether to save each
+later session. During every psychological conversation, create or update its
+minimized draft note so an abrupt ending does not erase the record; finalize it
+at a natural or explicit close. Purely technical maintenance is not a
+psychological session unless the user requests a record. Update only supported
+navigation entries in the relevant index and only the formulation, progress,
+and next-focus files supported by the interaction. An index may point to a
+session, research brief, or method record but must not duplicate its sensitive
+detail or turn a historical hypothesis into a current fact. Perform a bounded
+evidence-needs triage every time, but request `psychology-research` only when
+that skill is currently available and a material question could change safety,
+explanation, referral, or practical approach. That skill may read only exact
+files or excerpts already identified and authorized for the research question;
+it must not discover or enumerate the journal and returns findings without
+persistence. Create a brief only here, from the returned result. Change a
+supplemental method record only from research findings and a status decision
+returned by the core method workflow; append its revision history rather than
+rewriting an earlier decision.
+
+An explicit request not to record overrides this standing behavior. When made
+before journal access, perform no journal read or write. When made after a
+draft exists, stop further writes and ask separately whether that exact draft
+should be retained or deleted; do not interpret opt-out as permission for
+silent deletion or history rewriting.
 
 Read the required record schema from the installed skill and write only an
 initialized or completed, minimized user-data record to the journal. Never copy

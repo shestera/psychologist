@@ -2,7 +2,7 @@
 
 Read this reference before making a clinical or medical claim, recommending a
 substantial intervention, evaluating a screening instrument, or producing a
-research note.
+structured research result.
 
 ## Source hierarchy
 
@@ -43,7 +43,7 @@ In conversation, give the practical conclusion, a calibrated confidence level,
 the most important limitation, and one direct source link when useful. Do not
 turn emotional support into a literature review.
 
-For a research note, record:
+For a structured research result, return:
 
 - the decision the evidence could change;
 - search date and question;

@@ -51,8 +51,7 @@ instrument's noncommercial, share-alike, or other third-party terms.
 - **Limits:** self-report requires contextual verification. Neither the total
   score nor an individual response establishes depression or suicide risk; any
   current self-harm concern requires direct safety assessment.
-- **Primary sources:** [PHQ Screeners terms](https://www.phqscreeners.com/terms)
-  and [Kroenke et al., 2001](https://pubmed.ncbi.nlm.nih.gov/11556941/).
+- **Official terms:** [PHQ Screeners terms](https://www.phqscreeners.com/terms).
 
 ### GAD-7
 
@@ -68,8 +67,7 @@ instrument's noncommercial, share-alike, or other third-party terms.
 - **Limits:** anxiety symptoms are transdiagnostic. The score does not establish
   generalized anxiety disorder, exclude medical or substance-related causes,
   or select an intervention.
-- **Primary sources:** [PHQ Screeners terms](https://www.phqscreeners.com/terms)
-  and [Spitzer et al., 2006](https://pubmed.ncbi.nlm.nih.gov/16717171/).
+- **Official terms:** [PHQ Screeners terms](https://www.phqscreeners.com/terms).
 
 ### AUDIT
 

@@ -22,6 +22,8 @@ or change goal.
   [professional-framework.md](references/professional-framework.md).
 - **Selecting a built-in psychological method:** read
   [core-methods.md](references/core-methods.md).
+- **Selecting, revisiting, adding, or revising a supplemental method:** read
+  [additional-methods.md](references/additional-methods.md).
 - **Safety concern:** immediately read
   [safety-and-escalation.md](references/safety-and-escalation.md). Safety never
   depends on an optional journal or research skill.
@@ -45,12 +47,19 @@ cause.
 
 Use `psychology-journal` when the user asks to save, resume, connect, create,
 commit, share, or delete a journal; asks for longitudinal work; or host context
-exposes a plausible existing-journal locator. Let that skill perform the mode,
-permission, privacy, storage, and Git checks before any access. If it is not
-available, keep the conversation one-off: use only the current chat, create no
-durable record, promise no cross-chat memory, and offer to enable the journal
-skill only when a persistence signal occurs. Ordinary one-off conversations do
-not need a storage notice.
+exposes a plausible active or remembered journal locator. Let that skill
+determine whether a journal is actively connected, merely remembered, or
+absent before ordinary exploration. A verified active journal means automatic
+longitudinal continuity and documentation without a repeated save prompt. A
+mere remembered locator still requires that skill's reconnection checks.
+
+When no connected or remembered journal data is available, offer one concise
+choice before ordinary exploration: a one-off conversation using only the
+current chat, or longitudinal work by creating or connecting a journal. If the
+journal skill is unavailable, explain that persistence cannot be used in the
+current configuration and offer one-off conversation or enabling the skill.
+Do not reconstruct its workflow in core. Immediate safety never waits for this
+choice.
 
 Use `psychology-research` when the user explicitly requests research or
 sources, or when a fresh medical, legal, licensing, instrument, guideline, or
@@ -58,6 +67,8 @@ intervention claim could materially change the answer. If it is unavailable,
 do not improvise its evidence workflow. Give only a safe reflective or stable
 general response, state what was not freshly verified, and offer to enable the
 research skill. This limitation never delays immediate safety help.
+The research skill returns its findings to the requesting skill or user and
+never owns journal reads, writes, staging, or commits.
 
 ## Professional boundaries
 
@@ -103,4 +114,6 @@ directness, keep hypotheses tentative, and offer exercises only by agreement.
 No change is a legitimate option. Close with the main supported understanding,
 any genuinely agreed next step and stop condition, a revisable next focus, and
 an invitation to correct the assistant. File work, research notes, and commits
-belong only to their available specialist skills.
+belong only to the available journal skill. Source-heavy evidence work belongs
+to the available research skill, which returns its result without persisting
+it.

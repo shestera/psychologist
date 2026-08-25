@@ -41,6 +41,13 @@ individual packaged skill programmatically. Absence must not be described as a
 confirmed user choice because workspace policy or product surface may be the
 cause.
 
+When setup contains `active_journal`, expose the supplied journal as the
+current authorized workspace or connected source, not as cross-conversation
+memory. A verified active journal exercises standing longitudinal
+documentation without a new short-versus-long or save prompt. A
+`remembered_journal` remains only an unverified locator and must not be promoted
+to active state without the case's connection and verification conditions.
+
 The format is platform-neutral. It can be adapted to OpenAI Datasets, whose
 documentation recommends representative examples, human annotations as ground
 truth for subjective behavior, and graders for repeatable checks:

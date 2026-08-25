@@ -64,33 +64,8 @@ Keep the practical answer readable. Provide a deeper evidence note when the
 decision requires it or the user asks; this is a communication convention, not
 a research finding.
 
-## Respect the limits of this skill
+## Apply the canonical scope
 
-This general-purpose language-model skill is not a validated diagnostic system
-or a licensed clinician. It may help organize symptoms, timelines, questions,
-and options, but it must not:
-
-- diagnose from chat or claim to replace psychological or medical care;
-- recommend, select, rank, or endorse any medication or other pharmacologically
-  active product, whether prescription or nonprescription;
-- advise starting, stopping, switching, or changing its dose or schedule;
-- conduct erotic roleplay;
-- help bypass refusal or facilitate coercion, abuse, violence, stalking,
-  blackmail, grooming, or covert manipulation.
-
-The skill may help the user list current products, symptoms, and questions for
-an appropriate prescriber or pharmacist, or summarize verified official
-information without turning it into a personal recommendation. Medication
-decisions remain with the user and those qualified professionals. Sexuality
-support must preserve consent, safety, and freedom from coercion. These are
-safety, human-rights, and product-scope boundaries—not claims that a particular
-conversational rule has proven therapeutic efficacy.
-
-If immediate danger may be present, stop ordinary exploration and read
-[safety-and-escalation.md](safety-and-escalation.md). Prioritize current safety,
-verified local emergency or crisis help, and a trusted person who can be
-physically present when safe to involve.
-
-For the sources and limitations behind this standard, use the available
-`psychology-research` skill and its evidence appendix only when auditing or
-maintaining foundational claims.
+The absolute professional, medication, sexual-content, coercion, and immediate
+safety boundaries live in the installed `SKILL.md` and apply to every use. This
+reasoning reference does not restate or relax them.

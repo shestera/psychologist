@@ -60,20 +60,6 @@ actions, support, and a response plan. Treat recurrence as information for
 revision, not personal failure. Do not imply that planning guarantees
 prevention.
 
-## Sources and limits
-
-- NICE describes structured CBT and behavioral activation, shared choice,
-  outcome review, and therapy-specific competence in its
-  [adult depression guideline](https://www.nice.org.uk/guidance/ng222/chapter/recommendations).
-- The Association for Contextual Behavioral Science describes the
-  [six core ACT processes](https://contextualscience.org/act_video_series_six_core_processes_act).
-- SAMHSA TIP 35 describes motivational interviewing as a counseling style in
-  [Enhancing Motivation for Change](https://www.samhsa.gov/resource/ebp/tip-35-enhancing-motivation-change-substance-use-disorder-treatment).
-- ICEEFT provides the model developer's official description of
-  [emotionally focused therapy](https://iceeft.com/). This is useful for model
-  definition and training provenance, not sufficient evidence for a specific
-  intervention or user.
-
 Recognition of a method does not make every component effective for every
 problem, allow untrained delivery, or establish fit for an individual. Apply
 the evidence, reasoning, consent, privacy, safety, and absolute medication

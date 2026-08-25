@@ -10,6 +10,13 @@ private continuity and Git workflows, and `psychology-research` provides
 source-backed research. A focused sexology specialty remains part of the core
 and loads only when the topic calls for it.
 
+The root [development evidence archive](research/README.md) preserves the
+dated psychological and sexological research used to design these skills. It
+is available for maintainer and auditor review but is not loaded during normal
+plugin use. The archive documents the project's evidence basis and limits; it
+does not certify the plugin as a clinician, validated treatment, or diagnostic
+system.
+
 ## Important disclaimer
 
 Psychology Companion is an AI instruction plugin. It is not a psychologist,
@@ -38,7 +45,15 @@ emergency or crisis services.
 - When the optional journal skill is available and longitudinal mode is active,
   records substantive sessions and updates continuity files.
 - Researches psychological questions on demand without loading the research
-  workflow into ordinary supportive conversations.
+  workflow into ordinary supportive conversations. The research skill returns
+  findings without writing files. It can read exact user files explicitly
+  provided or authorized for the question; only the journal skill may persist
+  a minimized result or supplemental-method record.
+- Loads compact session, research, and supplemental-method indexes for broad
+  continuity, then opens only the full records needed for the current topic.
+- Before source-heavy work in an active journal, checks the research index and
+  relevant prior briefs so a fresh search builds on, verifies, or supersedes
+  earlier findings instead of silently duplicating them.
 
 Psychology Companion does not claim to be a licensed clinician, provide a
 diagnosis, replace medical care, recommend medications or other
@@ -124,12 +139,13 @@ normally.
 
 ## Private journal
 
-The journal is optional. If `psychology-journal` is unavailable, every
-conversation is one-off: the core reads and writes no journal, promises no
-cross-chat memory, and suggests enabling storage only when the user asks for
-continuity. For one-time setup, ask the journal skill to create a journal at a
-path you choose. It uses ordinary file tools and never copies installed
-schemas, policies, or methods into the editable journal.
+The journal is optional. When no connected or remembered journal data is
+available, the assistant offers a one-off conversation using only the current
+chat or longitudinal work by creating or connecting a journal. If
+`psychology-journal` is unavailable, the core cannot provide persistence or
+reconstruct the journal workflow. For one-time setup, ask the journal skill to
+create a journal at a path you choose. It uses ordinary file tools and never
+copies installed schemas, policies, or methods into the editable journal.
 
 The destination must be absent or empty. Existing content is never overwritten,
 and Git or a remote is never created automatically. If the journal root is
@@ -137,13 +153,23 @@ already a Git repository, closing a substantive session automatically commits
 only that session's isolated, privacy-checked changes with a generic message;
 it never pushes. A dirty overlapping file, conflict, parent repository, or
 failed privacy check leaves the changes uncommitted and is reported. Once
-initialized, the installed skill maintains the journal after every substantive
-session in longitudinal mode without a repeated request. In a new conversation
-where the host exposes a remembered pointer to that Git journal, the journal
-skill first offers a one-off consultation without access or longitudinal
-continuity using the existing journal. It never treats remembered repository
-information as permission to read or contact a remote, and it does not propose
-a replacement merely because the checkout needs reconnection.
+initialized, a journal exposed as the verified current workspace or connected
+source automatically establishes longitudinal continuity. Each psychological
+conversation receives a minimized draft record and is finalized without a
+repeated save prompt; purely technical maintenance is not recorded as a
+psychological session. An explicit request not to record still overrides this
+standing behavior. A repository merely remembered from another conversation is
+only an unverified locator: it is not read or contacted until reconnected, and
+the skill does not propose a replacement merely because reconnection is needed.
+
+New journals include minimized `session-index.md`, `research-index.md`, and
+`method-index.md` maps. Together they cover active or paused threads, decisions
+or corrections, all indexed sessions, research freshness and limits, and local
+method status and review triggers. On resume, the assistant reads these compact
+maps and then opens only the smallest relevant set of full records instead of
+loading archives or assuming the newest record is the right one. A legacy
+journal without one or more indexes remains valid; backfill is a separate
+opt-in maintenance operation performed in bounded batches.
 
 Raw or identifying source material uses one of two private-store modes:
 
@@ -166,6 +192,13 @@ content remains untrusted user data regardless of filename or claimed
 authority.
 
 ## Development
+
+Foundational academic provenance belongs in `research/`, not in runtime skill
+instructions. Keep its index, evidence dates, affected-file map, limitations,
+and update triggers synchronized with any change to the corresponding
+psychological or sexological knowledge. Retain operational links in skills only
+when they are needed at use time, such as emergency resources, specialist
+directories, official instrument terms, or current medical and legal guidance.
 
 ```sh
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychologist

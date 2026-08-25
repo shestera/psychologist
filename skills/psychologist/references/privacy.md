@@ -40,8 +40,10 @@ prevent it.
   relationship with a real clinician or the wording of a cited source; this
   skill does not itself make the user a patient.
 - Do not include real given names, family names, usernames, addresses, or other
-  direct identifiers in session notes, research briefs, case formulation,
-  reports, or handoffs.
+  direct identifiers in `SOUL.md`, session notes, research briefs, case
+  formulation, reports, or handoffs. This remains true when the identifier was
+  supplied voluntarily or appears in host, account, profile, workspace, or
+  conversation metadata.
 - If an exact personal date is both necessary and widely recognizable to
   friends, relatives, or colleagues—such as a birthday, wedding, or
   anniversary—keep it only in `private/context.md`. In tracked or portable
@@ -95,10 +97,18 @@ exist before reporting success. Verify that no schema, instruction, policy, or
 security file was created. Do not place copies of any installed skill resource
 in the journal.
 
-After initialization, offer optional customization of name, pronouns,
-formality, directiveness, response depth, and question pace. Apply preferences
-only within the professional communication standard. Do not require
-customization before helping the user.
+Initialize `SOUL.md` from the installed assistant-preferences asset, never from
+host metadata or remembered conversation details. The assistant display-name
+field can name only the assistant. A user-address field can contain only a
+pseudonym that the user explicitly identifies as a pseudonym and asks to store;
+otherwise leave it `not specified`. Never copy the user's real, preferred,
+legal, account, or profile name into `SOUL.md`.
+
+After initialization, offer optional customization of the assistant display
+name, an explicitly identified user-address pseudonym, pronouns, formality,
+directiveness, response depth, and question pace. Apply preferences only within
+the professional communication standard. Do not require customization before
+helping the user.
 
 ## Reading and session updates
 

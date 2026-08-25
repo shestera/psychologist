@@ -101,18 +101,18 @@ exist before reporting success. Verify that no schema, instruction, policy, or
 security file was created. Do not place copies of any installed skill resource
 in the journal.
 
-Initialize `SOUL.md` from the installed assistant-preferences asset, never from
-host metadata or remembered conversation details. The assistant display-name
-field can name only the assistant. A user-address field can contain only a
-pseudonym that the user explicitly identifies as a pseudonym and asks to store;
-otherwise leave it `not specified`. Never copy the user's real, preferred,
-legal, account, or profile name into `SOUL.md`.
+Initialize `SOUL.md` from the installed assistant-preferences asset. Treat its
+schema as a strict allowlist: every field and value must describe only the
+assistant's identity, voice, or interaction style. Do not store any fact,
+preference, label, identifier, or form of address about the user or another
+person there, and never populate it from host, account, profile, workspace, or
+remembered conversation metadata.
 
-After initialization, offer optional customization of the assistant display
-name, an explicitly identified user-address pseudonym, pronouns, formality,
-directiveness, response depth, and question pace. Apply preferences only within
-the professional communication standard. Do not require customization before
-helping the user.
+After initialization, offer optional customization of the assistant's display
+name, pronouns or grammatical gender, voice, formality, directiveness,
+emotional expression, response depth, and question pace. Apply settings only
+within the professional communication standard. Do not require customization
+before helping the user.
 
 ## Reading and session updates
 

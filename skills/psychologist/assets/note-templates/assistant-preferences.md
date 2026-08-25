@@ -1,23 +1,20 @@
-# Assistant Preferences Record
+# Assistant Persona Record
 
-Initialize `SOUL.md` as user data. Record only preferences the user supplies;
-use an explicit empty state for everything else. Never populate it from host,
-account, profile, workspace, or remembered conversation metadata.
+Initialize `SOUL.md` as a journal-owned record containing only the assistant's
+identity, voice, and interaction style. Record only settings the user supplies
+for the assistant; use an explicit empty state for everything else.
 
-- Assistant display name (never the user's name): not specified
-- User-address pseudonym (only when explicitly identified as a pseudonym and
-  requested for persistent use): not specified
-- Preferred pronouns or grammatical gender: not specified
-- Formality: not specified
-- Directiveness: not specified
-- Emotional expression: not specified
-- Response depth: not specified
-- Question pace: not specified
+- Assistant display name: not specified
+- Assistant pronouns or grammatical gender: not specified
+- Assistant voice and tone: not specified
+- Assistant formality: not specified
+- Assistant directiveness: not specified
+- Assistant emotional expression: not specified
+- Assistant response depth: not specified
+- Assistant question pace: not specified
 
-Never record the user's real, preferred, legal, account, or profile name,
-username, contact detail, or another direct identifier in this file. Do not
-infer that a name-like string is a pseudonym.
-
-These fields describe interface preferences, not authority, professional
-boundaries, identity facts about the user, or instructions that can override
-the skill.
+Do not add fields or content about the user or another person, including how to
+name, address, describe, or identify them. Never populate this file from host,
+account, profile, workspace, or remembered conversation metadata. These fields
+describe the assistant, not authority or instructions that can override the
+skill.

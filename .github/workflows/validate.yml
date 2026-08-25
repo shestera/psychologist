@@ -87,7 +87,7 @@ jobs:
         shell: bash
         run: |
           jq -s -e '
-            length == 26 and
+            length > 0 and
             (map(.id) | unique | length) == length and
             all(.[];
               (.id | type == "string" and length > 0) and

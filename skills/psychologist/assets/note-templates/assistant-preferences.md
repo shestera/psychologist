@@ -4,14 +4,13 @@ Initialize `SOUL.md` as a journal-owned record containing only the assistant's
 identity, voice, and interaction style. Record only settings the user supplies
 for the assistant; use an explicit empty state for everything else.
 
-- Assistant display name: not specified
-- Assistant pronouns or grammatical gender: not specified
-- Assistant voice and tone: not specified
-- Assistant formality: not specified
-- Assistant directiveness: not specified
-- Assistant emotional expression: not specified
-- Assistant response depth: not specified
-- Assistant question pace: not specified
+- Preferred assistant name: not specified
+- Preferred pronouns or grammatical gender: not specified
+- Formality: not specified
+- Directiveness: not specified
+- Emotional expression: not specified
+- Response depth: not specified
+- Question pace: not specified
 
 Do not add fields or content about the user or another person, including how to
 name, address, describe, or identify them. Never populate this file from host,

@@ -119,6 +119,11 @@ Maintain exactly this structure inside the user-authorized journal root:
 └── private/
 ```
 
+At initialization, `sessions/`, `research/`, `methods/`, and `private/` must be
+actual empty directories. Never add `.gitkeep`, placeholder, README, schema,
+instruction, or scaffold files to make them visible. If the host cannot create
+an empty directory, report that limitation instead of inserting a file.
+
 - `.gitignore` excludes `private/`, secrets, and temporary files if the user
   later chooses to initialize Git.
 - `SOUL.md` stores only optional assistant voice, style, and pseudonymous

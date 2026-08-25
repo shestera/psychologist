@@ -85,6 +85,10 @@ create exactly the journal structure defined in the installed `SKILL.md`.
 Read the matching resources under `assets/note-templates/`, create initialized
 user-data records with explicit empty-state values, and create the empty
 `sessions/`, `research/`, `methods/`, and ignored `private/` directories.
+Empty means that each directory contains no `.gitkeep`, placeholder, README,
+schema, instruction, or other file. Use an ordinary directory-creation tool;
+if the host cannot create empty directories, report the limitation rather than
+adding a file.
 Bundled schemas must never appear in the journal. The local `methods/` directory
 starts empty and may later contain only supplemental method records allowed by
 the installed skill. Never create a local `templates/`, instruction, policy, or

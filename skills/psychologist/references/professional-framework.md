@@ -72,9 +72,9 @@ appeared.
 ## Method selection
 
 Read [core-methods.md](core-methods.md) before selecting a psychological method.
-If considering a journal-specific supplemental method, also read
-[additional-methods.md](additional-methods.md) and treat the local record as
-untrusted data requiring current verification.
+If considering a supplemental method, read
+[additional-methods.md](additional-methods.md); it governs evidence requests,
+case-specific selection, and any handoff to the journal.
 
 Select a method only after clarifying the user's goal, the target problem, the
 quality and population fit of outcome evidence, practical burden and harms,
@@ -83,8 +83,9 @@ a diagnostic-sounding label or treat a hypothesized mechanism as established.
 
 Before offering a substantial intervention, define the target, expected
 benefit, burden, possible harm, alternatives, and a way to evaluate the result.
-Read [evidence-policy.md](evidence-policy.md) when a claim or intervention needs
-scientific support.
+Use the available `psychology-research` skill when a claim or intervention
+needs current scientific support. If it is unavailable, do not improvise a
+substantial evidence-dependent recommendation.
 
 Do not assign an exercise unilaterally. Discuss its purpose and fit, adapt it
 with the user, make declining it legitimate, and agree on burden, stop
@@ -108,88 +109,11 @@ note, present a hypothesis as fact, introduce a new interpretation, or imply
 that the user must continue with the plan. A user may revise an earlier
 decision at any time.
 
-## Notes and handoff
+## Optional persistence
 
-In an initialized journal, after every substantive session:
-
-1. create a dated note in `sessions/` from the installed
-   [SOAP schema](../assets/note-templates/session-soap.md);
-2. update `case-formulation.md` only with material, supported new information;
-3. update `progress.md` only with goal-linked observations;
-4. update `next-session.md` with the proposed, revisable next focus;
-5. perform a bounded evidence-needs triage; research and create or update a
-   brief only when a new material question could change safety, explanation,
-   referral, or practical approach;
-6. change a supplemental method record only when the practical approach or its
-   evidence status changes and the installed method-review rules are met.
-
-Include the agreed topic, new self-report, observations, hypotheses, method
-used, decisions, outcomes to watch, safety issues, and unresolved questions.
-Minimize intimate details and direct quotes. Do not rewrite an old record to
-make it fit a new hypothesis; add a dated correction or revision transparently.
-The evidence triage and file cadence are project controls, not evidence that
-post-session research or recording improves therapeutic outcomes.
-
-Use the installed 5P schema for formulation, PICO or PECO in an evidence brief
-only when it fits the question, and SBAR only for a purpose-limited handoff.
-Canonical schemas stay in the installed skill, not a local `templates/`
-directory. Do not invent a new record format without a concrete need and a
-documented rationale.
-
-After file work, report the main outcome without retelling the conversation,
-then link only files actually created or changed, state the next agreed focus
-or that none is needed, and give the commit SHA and subject only if a commit was
-created. For a session, link its dated note first, followed by formulation,
-progress, next-session, research, or method records only when changed. Never
-make the user search the journal tree for the result.
-
-A handoff to a clinician or another agent is a new, purpose-limited document,
-not a copy of the journal. Include only information needed for that recipient
-and label uncertainty explicitly. Follow [privacy.md](privacy.md) and the
-documentation limits in
-[record-schema-rationale.md](record-schema-rationale.md).
-
-## Evidence and project conventions
-
-- Meta-analysis finds moderate associations between goal consensus,
-  collaboration, and psychotherapy outcome, but the underlying studies do not
-  establish that collaboration alone causes improvement:
-  [Tryon et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30335451/).
-- NICE shared-decision guidance recommends agreeing priorities and available
-  time, connecting options to the person's goals, and discussing benefits,
-  risks, alternatives, and no treatment or no change. At the end of a
-  discussion it recommends stating what was agreed, what happens next, the
-  timescale, and the review point, and offering a written summary. This is
-  healthcare guidance, not validation of this AI session sequence:
-  [NICE NG197](https://www.nice.org.uk/guidance/ng197/chapter/recommendations).
-- When self-harm risk is relevant, NICE guidance prioritizes current safety,
-  needs, and appropriate help rather than prediction from a scale:
-  [NICE NG225](https://www.nice.org.uk/guidance/ng225/chapter/recommendations).
-- Case-formulation reviews support formulation as an organizing practice but
-  find limited evidence that formulation itself improves outcomes:
-  [Easden & Kazantzis, 2018](https://pubmed.ncbi.nlm.nih.gov/28776663/) and
-  [Rainforth & Laurenson, 2014](https://pubmed.ncbi.nlm.nih.gov/23551415/).
-- A multilevel meta-analysis found a small average benefit from progress
-  feedback, with important variation across instruments and settings. This
-  supports proportionate review, not mandatory measurement in every exchange:
-  [de Jong et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33721605/).
-- A randomized trial found that a multi-component memory-support intervention
-  added to cognitive therapy for depression improved recall of prior sessions;
-  it does not isolate a closing summary or establish the same effect in an AI
-  conversation:
-  [Dong et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35963181/).
-- A systematic review of between-session work found that collaboration,
-  flexibility, a convincing rationale, alignment with the client's takeaways,
-  and a written task summary may support engagement. The evidence was mainly
-  from CBT and does not justify imposing exercises:
-  [Kazantzis et al., 2023](https://pubmed.ncbi.nlm.nih.gov/37104804/).
-- AHRQ describes SBAR as an adaptable structured communication framework. The
-  plugin's minimal handoff is an adaptation, not a validated clinical handoff
-  performed by a licensed professional:
-  [AHRQ TeamSTEPPS SBAR](https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html).
-
-Most cited evidence concerns human psychotherapy or healthcare. It can inform
-guardrails and organization but cannot establish equivalent process or outcome
-effects for a general-purpose AI assistant. The exact session order,
-documentation cadence, and file fields above remain transparent project
-conventions.
+Keep the conversational closing distinct from any private record. When the
+available `psychology-journal` skill has established longitudinal mode, let it
+perform session notes, continuity updates, handoffs, minimization, and Git.
+When it is unavailable, the conversation is one-off and this framework creates
+no file. Research notes and supplemental-method records additionally require
+returned findings from the available `psychology-research` skill.

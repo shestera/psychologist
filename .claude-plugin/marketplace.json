@@ -13,7 +13,7 @@
         "repo": "shestera/psychologist",
         "ref": "v0.2.1"
       },
-      "description": "A professional, evidence-aware psychological assistant with a sexology specialty and private long-term journal.",
+      "description": "A modular psychological assistant with optional private continuity, research, and a sexology specialty.",
       "version": "0.2.1",
       "author": {
         "name": "shestera"
@@ -26,7 +26,8 @@
         "wellbeing",
         "relationships",
         "sexology",
-        "journaling"
+        "journaling",
+        "research"
       ]
     }
   ]

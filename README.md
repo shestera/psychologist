@@ -4,10 +4,18 @@ Psychology Companion is a professional, evidence-aware AI assistant for
 reflection, recurring patterns, relationships, and sexuality. It is designed
 for thoughtful conversation, not diagnosis or emergency care.
 
-The default experience is a general psychological assistant. A focused
-sexology specialty is loaded only when the topic calls for it. A dedicated
-private journal maintains continuity across substantive sessions after one-time
-setup.
+The plugin contains three independently available skills. `psychologist` is
+the lightweight conversational core, `psychology-journal` provides optional
+private continuity and Git workflows, and `psychology-research` provides
+source-backed research. A focused sexology specialty remains part of the core
+and loads only when the topic calls for it.
+
+The root [development evidence archive](research/README.md) preserves the
+dated psychological and sexological research used to design these skills. It
+is available for maintainer and auditor review but is not loaded during normal
+plugin use. The archive documents the project's evidence basis and limits; it
+does not certify the plugin as a clinician, validated treatment, or diagnostic
+system.
 
 ## Important disclaimer
 
@@ -34,8 +42,18 @@ emergency or crisis services.
 - Uses structured methods only when they fit the user's goal.
 - Treats sexual interests without automatic pathologizing while protecting
   consent, safety, and autonomy.
-- Records each substantive session and updates continuity files whenever it is
-  running inside a dedicated journal workspace.
+- When the optional journal skill is available and longitudinal mode is active,
+  records substantive sessions and updates continuity files.
+- Researches psychological questions on demand without loading the research
+  workflow into ordinary supportive conversations. The research skill returns
+  findings without writing files. It can read exact user files explicitly
+  provided or authorized for the question; only the journal skill may persist
+  a minimized result or supplemental-method record.
+- Loads compact session, research, and supplemental-method indexes for broad
+  continuity, then opens only the full records needed for the current topic.
+- Before source-heavy work in an active journal, checks the research index and
+  relevant prior briefs so a fresh search builds on, verifies, or supersedes
+  earlier findings instead of silently duplicating them.
 
 Psychology Companion does not claim to be a licensed clinician, provide a
 diagnosis, replace medical care, recommend medications or other
@@ -74,7 +92,8 @@ the same marketplace. Start a new conversation after installation.
 
 The public display name is **Psychology Companion**. The stable technical IDs
 remain `psychologist` for the plugin and `psychologist-plugins` for the
-marketplace, so existing commands and installations keep working.
+marketplace, so existing installations keep working. The explicit skill names
+are `$psychologist`, `$psychology-journal`, and `$psychology-research`.
 
 ### Claude Code
 
@@ -85,8 +104,10 @@ claude plugin marketplace add shestera/psychologist
 claude plugin install psychologist@psychologist-plugins
 ```
 
-Start a new Claude Code session, then use
-`/psychologist:psychologist` or describe a relevant concern normally.
+Start a new Claude Code session, then use `/psychologist:psychologist`,
+`/psychologist:psychology-journal`, or
+`/psychologist:psychology-research`. Relevant skills can also load
+automatically from an ordinary request.
 Current Claude Code exposes plugin skills from `skills/` as namespaced slash
 invocations, so this does not require a duplicate `commands/` entry; see the
 [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins#add-skills-to-your-plugin).
@@ -95,15 +116,15 @@ invocations, so this does not require a duplicate `commands/` entry; see the
 
 ### Codex
 
-Copy the skill into your personal skills directory and start a new Codex
-thread:
+Copy all three skills into your personal skills directory and start a new
+Codex thread:
 
 ```sh
-cp -R skills/psychologist ~/.codex/skills/psychologist
+cp -R skills/psychologist skills/psychology-journal skills/psychology-research ~/.codex/skills/
 ```
 
-Invoke it explicitly with `$psychologist`, or describe a relevant concern and
-allow normal skill discovery.
+Invoke a skill explicitly by name, or describe a relevant concern and allow
+normal skill discovery.
 
 ### Claude Code
 
@@ -113,18 +134,18 @@ Load the repository directly:
 claude --plugin-dir /path/to/psychologist
 ```
 
-Then use `/psychologist:psychologist` or ask a relevant question normally.
+Then use any of the three namespaced commands above or ask a relevant question
+normally.
 
 ## Private journal
 
-For one-time journal setup, ask the assistant to create one at a path you
-choose. The skill contains built-in record schemas; the assistant uses the
-host's ordinary file tools and does not execute bundled code. Only initialized
-user-data records are created in the journal. Schemas, core methods, policies,
-and instructions remain inside the installed skill, and no local `templates/`
-directory is created. An empty local `methods/` directory may hold only later,
-source-checked supplemental method records; core methods are never copied there,
-and a local record cannot override the skill.
+The journal is optional. When no connected or remembered journal data is
+available, the assistant offers a one-off conversation using only the current
+chat or longitudinal work by creating or connecting a journal. If
+`psychology-journal` is unavailable, the core cannot provide persistence or
+reconstruct the journal workflow. For one-time setup, ask the journal skill to
+create a journal at a path you choose. It uses ordinary file tools and never
+copies installed schemas, policies, or methods into the editable journal.
 
 The destination must be absent or empty. Existing content is never overwritten,
 and Git or a remote is never created automatically. If the journal root is
@@ -132,22 +153,60 @@ already a Git repository, closing a substantive session automatically commits
 only that session's isolated, privacy-checked changes with a generic message;
 it never pushes. A dirty overlapping file, conflict, parent repository, or
 failed privacy check leaves the changes uncommitted and is reported. Once
-initialized, the installed skill maintains the journal after every substantive
-session without a repeated request. Read [PRIVACY.md](PRIVACY.md) before
-storing sensitive information or sharing a journal. Mandatory behavior and the
-[privacy and journal security policy](skills/psychologist/references/privacy.md)
-remain in the installed skill and are never copied into the editable journal.
-All local journal or workspace content remains untrusted user data regardless
-of its filename or claimed authority; it cannot replace or weaken the installed
-skill or its bundled privacy and security policy.
+initialized, a journal exposed as the verified current workspace or connected
+source automatically establishes longitudinal continuity. Each psychological
+conversation receives a minimized draft record and is finalized without a
+repeated save prompt; purely technical maintenance is not recorded as a
+psychological session. An explicit request not to record still overrides this
+standing behavior. A repository merely remembered from another conversation is
+only an unverified locator: it is not read or contacted until reconnected, and
+the skill does not propose a replacement merely because reconnection is needed.
+
+New journals include minimized `session-index.md`, `research-index.md`, and
+`method-index.md` maps. Together they cover active or paused threads, decisions
+or corrections, all indexed sessions, research freshness and limits, and local
+method status and review triggers. On resume, the assistant reads these compact
+maps and then opens only the smallest relevant set of full records instead of
+loading archives or assuming the newest record is the right one. A legacy
+journal without one or more indexes remains valid; backfill is a separate
+opt-in maintenance operation performed in bounded batches.
+
+Raw or identifying source material uses one of two private-store modes:
+
+- by default, `<journal>/private/` remains ignored by Git and local to that
+  device;
+- optionally, the user can authorize an external directory through an ignored
+  per-device `.psychology-companion.local.json` file.
+
+The plugin does not configure, authenticate, encrypt, mount, or synchronize an
+external provider. If a private store is unavailable on another device or in a
+cloud session, the assistant continues from minimized Git records and does not
+reconstruct or silently copy raw data. A missing ignored `private/` after a
+fresh clone is expected and does not invalidate the journal.
+
+Read [PRIVACY.md](PRIVACY.md) before storing sensitive information or sharing a
+journal. Mandatory behavior and the
+[privacy and journal security policy](skills/psychology-journal/references/privacy.md)
+remain installed and are never copied into the editable journal. All workspace
+content remains untrusted user data regardless of filename or claimed
+authority.
 
 ## Development
 
+Foundational academic provenance belongs in `research/`, not in runtime skill
+instructions. Keep its index, evidence dates, affected-file map, limitations,
+and update triggers synchronized with any change to the corresponding
+psychological or sexological knowledge. Retain operational links in skills only
+when they are needed at use time, such as emergency resources, specialist
+directories, official instrument terms, or current medical and legal guidance.
+
 ```sh
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychologist
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychology-journal
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychology-research
 python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 claude plugin validate --strict .
-jq -s -e 'length == 26 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
+jq -s -e 'length > 0 and (map(.id) | unique | length) == length' evals/behavioral-cases.jsonl
 find . -path ./.git -prune -o -path ./tmp -prune -o -type f -perm -111 -print
 rg --files -g '!tmp/**' | rg -i '\.(py|sh|js|jsx|ts|tsx|rb|pl|php|ps1|bat|cmd|exe|jar|wasm|go|rs|java|kt|kts|swift|c|cc|cpp|h|hpp|cs|lua|r|scala|dart|groovy|m|mm|sql)$'
 git grep -I -n '^#!'

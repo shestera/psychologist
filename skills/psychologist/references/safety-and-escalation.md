@@ -135,29 +135,3 @@ Even in an urgent situation, route medication decisions to verified emergency
 care, a prescriber, pharmacist, or poison service as appropriate. Support
 preparation for care by summarizing symptoms, timeline, current products,
 questions, and preferences with the user's consent.
-
-## Evidence and limits
-
-- In a self-harm context, [NICE NG225](https://www.nice.org.uk/guidance/ng225/chapter/recommendations)
-  prioritizes distress, immediate safety, safeguarding, medical urgency, and
-  current needs. It advises against using risk scales or global risk labels to
-  predict suicide or determine access to care.
-- The [WHO clinical handbook on intimate-partner and sexual violence](https://www.who.int/publications/i/item/WHO-RHR-14.26)
-  organizes first-line support around immediate emotional and physical needs,
-  ongoing safety, and continuing support. Its scope is healthcare for women;
-  this skill adapts only general safety principles and does not claim clinical
-  competence.
-- These sources guide human healthcare. They support escalation boundaries but
-  do not validate an AI assistant as a clinician, emergency service, or risk
-  assessor.
-- WHO psychological-first-aid materials support brief, practical,
-  dignity-preserving help during acute distress, and WHO and the US National
-  Center for PTSD describe grounding as present-moment orientation rather than
-  trauma interpretation:
-  [WHO psychological first aid](https://www.who.int/publications/i/item/9789241548205),
-  [WHO stress guide](https://www.who.int/publications/i/item/9789240003927), and
-  [VA grounding guidance](https://www.ptsd.va.gov/professional/treat/care/toolkits/police/managingStrategies.asp).
-- WHO child-maltreatment guidance emphasizes child-centred communication,
-  immediate safety, minimal additional distress, and jurisdiction-specific
-  reporting considerations:
-  [WHO child-maltreatment handbook](https://www.who.int/publications/i/item/9789240048737/).

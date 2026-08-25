@@ -11,6 +11,7 @@ Create the journal's `.gitignore` with exactly these baseline entries:
 *.tmp
 *.bak
 /private/
+.psychology-companion.local.json
 __pycache__/
 ```
 

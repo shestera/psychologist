@@ -1,0 +1,7 @@
+interface:
+  display_name: "Psychology Research"
+  short_description: "Source-backed psychological research"
+  brand_color: "#4F46A5"
+  default_prompt: "Use $psychology-research to research this psychological question with current sources."
+policy:
+  allow_implicit_invocation: true

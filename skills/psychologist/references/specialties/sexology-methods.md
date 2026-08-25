@@ -62,30 +62,3 @@ ageing, disability, chronic illness, intensive treatment, or surgery, map:
 Do not frame sexuality as mandatory at any life stage, erase asexual or
 aromantic identity, assume disability prevents sexual agency, or attribute a
 change to hormones, ageing, or psychology without assessment.
-
-## Evidence and limits
-
-Links checked 2026-08-25.
-
-- Basson's circular model highlights responsive desire and overlapping phases,
-  while later population work supports heterogeneity rather than one universal
-  sequence:
-  [Basson, 2002](https://pubmed.ncbi.nlm.nih.gov/11898699/) and
-  [Nowosielski et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26601676/).
-- The dual control model describes sexual response as the balance of excitation
-  and inhibition; a 2023 scoping review found broad research use alongside
-  important variation in measures and applications:
-  [Janssen & Bancroft, 2023](https://pubmed.ncbi.nlm.nih.gov/37267113/).
-- A meta-analysis of laboratory studies found imperfect agreement between
-  genital and self-reported arousal. It supports separating these signals, not
-  predicting one person's response from a group average:
-  [Chivers et al., 2010](https://pubmed.ncbi.nlm.nih.gov/20049519/).
-- The 2024 International Consultation on Sexual Medicine recommends
-  biopsychosocial, individualized assessment, including chronic illness and
-  relationship context, while acknowledging that some recommendations rely on
-  expert consensus:
-  [Brotto et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39786497/).
-
-These sources concern human research and professional care. They support
-careful psychoeducation and formulation but do not validate this AI skill as a
-sex therapist or establish effectiveness for an individual user.

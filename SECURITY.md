@@ -20,7 +20,7 @@ model, local computer, backups, or a user-configured tool.
 The plugin must contain only instructions, manifests, policies, and static
 assets: no bundled scripts, executable files, shebang files, or symlinks. Its
 mandatory journal policy stays in
-`skills/psychologist/references/privacy.md` and is not copied into an editable
+`skills/psychology-journal/references/privacy.md` and is not copied into an editable
 journal.
 
 The skill intentionally omits `allowed-tools`. In Claude Code that frontmatter

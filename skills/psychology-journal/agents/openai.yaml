@@ -1,0 +1,7 @@
+interface:
+  display_name: "Psychology Journal"
+  short_description: "Private continuity and journal Git workflow"
+  brand_color: "#4F46A5"
+  default_prompt: "Use $psychology-journal to continue from my private journal safely."
+policy:
+  allow_implicit_invocation: true

@@ -7,11 +7,11 @@ sexual disclosure involves someone who cannot consent. Do not load it for an
 ordinary adult concern about desire, arousal, identity, intimacy, or sexual
 health without one of those triggers.
 
-This reference supplements
-[sexology.md](sexology.md),
-[safety-and-escalation.md](../safety-and-escalation.md), and
-[privacy.md](../privacy.md). Immediate danger or medical urgency always uses
-the installed safety reference first.
+This reference supplements [sexology.md](sexology.md) and
+[safety-and-escalation.md](../safety-and-escalation.md). When durable recording
+is active, the available `psychology-journal` skill supplies the privacy and
+minimum-record controls. Immediate danger or medical urgency always uses the
+installed safety reference first.
 
 ## Adult-status and safeguarding gate
 

@@ -129,6 +129,6 @@ care in favor of the plugin, or reaches three same-goal sessions without
 movement, immediately read
 [continuity-and-dependence.md](continuity-and-dependence.md).
 
-For the sources and limitations behind this standard, read the
-[evidence appendix](evidence-appendix.md) only when auditing or maintaining the
-skill's foundational claims.
+For the sources and limitations behind this standard, use the available
+`psychology-research` skill and its evidence appendix only when auditing or
+maintaining foundational claims.

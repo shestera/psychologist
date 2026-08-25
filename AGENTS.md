@@ -2,26 +2,21 @@
 
 ## Project Structure & Module Organization
 
-This repository packages a psychologist skill for Codex and Claude Code.
+This repository packages three coordinated Psychology Companion skills for
+Codex and Claude Code.
 
 - `.codex-plugin/plugin.json` contains the Codex plugin manifest and points to `skills/`.
 - `.claude-plugin/plugin.json` contains the Claude Code plugin manifest.
 - `.agents/plugins/marketplace.json` and `.claude-plugin/marketplace.json`
   expose the root plugin through the OpenAI and Claude Code repository
   marketplaces without duplicating its files.
-- `skills/psychologist/SKILL.md` defines the psychologist skill instructions.
-- `skills/psychologist/references/` holds source-backed professional guidance;
-  `privacy.md` is the mandatory privacy and journal security policy,
-  `core-methods.md` defines built-in methods, and `additional-methods.md`
-  governs journal-specific supplemental methods. `evidence-appendix.md` keeps
-  audit citations out of the ordinary conversation path, while
-  `continuity-and-dependence.md` holds longitudinal safeguards. The
-  psychometric registry is a dated starting point, not a bundled questionnaire
-  library. `references/specialties/sexology.md` holds the core sexology stance;
-  safety and medical or substance-use details live in conditionally routed
-  sibling references.
-- `skills/psychologist/assets/note-templates/` holds schemas that remain inside
-  the skill and are used to create initialized user-data records.
+- `skills/psychologist/` is the lightweight conversational, safety, methods,
+  and sexology core.
+- `skills/psychology-journal/` owns longitudinal continuity, privacy, record
+  schemas, private-store selection, and protected Git behavior.
+- `skills/psychology-research/` owns evidence appraisal, psychometrics,
+  supplemental-method review, and research record schemas. Its psychometric
+  registry is a dated starting point, not a bundled questionnaire library.
 
 ## Build, Test, and Development Commands
 
@@ -29,6 +24,8 @@ There is no build step or third-party runtime dependency. Validate every change:
 
 ```sh
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychologist
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychology-journal
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/psychology-research
 python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 claude plugin validate --strict .
 find . -path ./.git -prune -o -path ./tmp -prune -o -type f -perm -111 -print
@@ -40,7 +37,9 @@ git diff --check
 Safety checks must print nothing. Journal creation
 instructions must refuse symlinks and non-empty destinations, preserve existing
 files, never initialize Git, and keep policies, schemas, and a local
-`templates/` directory out of the editable journal.
+`templates/` directory out of the editable journal. External private-store
+configuration must remain ignored, allowlisted, per-device, and outside every
+Git worktree.
 
 ## Coding Style & Naming Conventions
 
@@ -57,6 +56,9 @@ consent and avoid pathologizing; crisis language must switch to immediate
 safety; journal creation must protect existing files and never copy bundled
 record schemas or core methods into the journal. Its local `methods/` directory
 must start empty and accept only reviewed supplemental method records.
+Disabling the journal skill must force one-off conversation behavior;
+disabling research must prevent evidence-note creation without weakening
+crisis safety.
 
 Validate `evals/behavioral-cases.jsonl` with the repository CI and follow
 `evals/RUBRIC.md` for model runs. Before a release that changes instructions or

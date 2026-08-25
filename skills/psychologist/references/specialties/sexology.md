@@ -175,12 +175,12 @@ ordinary exploration and follow the installed safety reference.
 
 ## Psychological methods and exercises
 
-Read [core-methods.md](../core-methods.md) and
-[evidence-policy.md](../evidence-policy.md) before offering a substantial
-method. Define the specific target, expected benefit, burden, harms,
-alternatives, stop conditions, and observable result. Evidence varies by
-problem, population, intervention, and comparator; do not generalize a study of
-one sexual dysfunction or population to all sexuality concerns.
+Read [core-methods.md](../core-methods.md) before offering a psychological
+method. For a substantial evidence-dependent method, also use the available
+`psychology-research` skill. Define the specific target, expected benefit,
+burden, harms, alternatives, stop conditions, and observable result. Evidence
+varies by problem, population, intervention, and comparator; do not generalize
+a study of one sexual dysfunction or population to all sexuality concerns.
 
 For desire and arousal formulation, also use the installed
 [sexology methods](sexology-methods.md); these conceptual models do not belong
@@ -193,6 +193,6 @@ abstinence, exposure, sensate-focus exercises, partner disclosure, or a couple
 exercise by default. Any partnered exercise requires each person's independent
 agreement, no concealed test or pressure, and an easy stop condition.
 
-For the sources and limitations behind this standard, read the
-[evidence appendix](../evidence-appendix.md) only when auditing or maintaining
-the skill's foundational claims.
+For the sources and limitations behind this standard, use the available
+`psychology-research` skill and its evidence appendix only when auditing or
+maintaining foundational claims.

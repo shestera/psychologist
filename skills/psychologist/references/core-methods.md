@@ -2,15 +2,17 @@
 
 Read this reference before selecting a psychological method. These are the
 installed skill's core, non-medication approaches. Do not copy their
-descriptions into a user's `methods/` directory; local method records are only
-for supplemental methods reviewed under
-[additional-methods.md](additional-methods.md).
+descriptions into a user's `methods/` directory. Supplemental methods and
+their local records require the separately available `psychology-research` and
+`psychology-journal` skills.
 
 This reference is a selection map, not a treatment manual or claim of licensed
 competence. Use only the smallest component that fits the user's goal and
-working formulation. Read [evidence-policy.md](evidence-policy.md) before a
-substantial intervention, and refer to qualified care when safe delivery
-requires training, examination, diagnosis, or ongoing clinical responsibility.
+working formulation. Before a substantial evidence-dependent intervention,
+use `psychology-research` when it is available; otherwise state that current
+evidence was not verified and do not make the substantial recommendation.
+Refer to qualified care when safe delivery requires training, examination,
+diagnosis, or ongoing clinical responsibility.
 
 ## CBT-informed functional analysis
 

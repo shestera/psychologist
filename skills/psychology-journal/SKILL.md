@@ -1,6 +1,6 @@
 ---
 name: psychology-journal
-description: Manage Psychology Companion longitudinal continuity, private journal files, local or external private stores, remembered journal reconnection, handoffs, and protected Git commits. Use when the user asks to save or resume sessions, maintain long-term goals, connect an existing journal, or perform journal-related file or Git work. Do not use for an ordinary one-off consultation.
+description: Manage Psychology Companion longitudinal continuity, private journal files, local or external private stores, remembered journal reconnection, handoffs, and protected Git commits. Use whenever the user asks to save personal session progress between chats, resume long-term work, connect an existing journal, or perform journal-related file or Git work, including when no journal path has been chosen yet. Do not use for an ordinary one-off consultation.
 license: PolyForm-Noncommercial-1.0.0
 ---
 

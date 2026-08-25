@@ -1,6 +1,6 @@
 ---
 name: psychology-research
-description: Research psychological, psychometric, sexual-health, or intervention questions using current authoritative sources and calibrated evidence appraisal. Use when the user asks for sources or a research brief, or when a fresh medical, legal, licensing, guideline, screening, or treatment-evidence claim could materially change an answer. Do not activate for ordinary emotional support.
+description: Research psychological, psychometric, sexual-health, or intervention questions using current authoritative sources and calibrated evidence appraisal. Use whenever the user asks to look up, find, check, or verify current sources or requests a research brief, and when a fresh medical, legal, licensing, guideline, screening, or treatment-evidence claim could materially change an answer. Do not activate for ordinary emotional support.
 license: PolyForm-Noncommercial-1.0.0
 ---
 

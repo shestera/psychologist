@@ -150,9 +150,15 @@ copies installed schemas, policies, or methods into the editable journal.
 The destination must be absent or empty. Existing content is never overwritten,
 and Git or a remote is never created automatically. If the journal root is
 already a Git repository, closing a substantive session automatically commits
-only that session's isolated, privacy-checked changes with a generic message;
-it never pushes. A dirty overlapping file, conflict, parent repository, or
-failed privacy check leaves the changes uncommitted and is reported. Once
+only that session's isolated, privacy-checked changes with a generic message.
+When the user connected that exact journal as a writable Git source with a
+verified existing remote, the same standing authorization also synchronizes the
+single protected commit to its unchanged upstream without asking every time. It
+never creates or changes a remote, force-pushes, creates a pull request, or sends
+unrelated commits under that standing behavior. A pull request containing
+session records requires a separate explicit request. A dirty overlapping file,
+conflict, parent repository, changed remote, or failed privacy check leaves the
+unsafe portion unfinished and is reported. Once
 initialized, a journal exposed as the verified current workspace or connected
 source automatically establishes longitudinal continuity. Each psychological
 conversation receives a minimized draft record and is finalized without a
@@ -161,6 +167,18 @@ psychological session. An explicit request not to record still overrides this
 standing behavior. A repository merely remembered from another conversation is
 only an unverified locator: it is not read or contacted until reconnected, and
 the skill does not propose a replacement merely because reconnection is needed.
+
+Each completed session is one semantic commit and, when a writable Git source is
+connected, at most one push. Its note and all supported formulation, progress,
+plan, index, research, or method updates stay together.
+Git metadata describes the changed record classes and privacy checks in useful
+anonymous terms without exposing the personal topic. Technical repository work
+is kept out of session commits and uses a separate coherent Conventional Commit
+for the whole technical outcome, not one commit per file or small edit. In a
+connected writable repository, an authorized technical change uses a dedicated
+generic branch and one review pull request by default; the plugin never merges
+that PR automatically. Its title and body describe the technical problem,
+change, impact, validation, and limits without personal data.
 
 New journals include minimized `session-index.md`, `research-index.md`, and
 `method-index.md` maps. Together they cover active or paused threads, decisions
@@ -183,6 +201,13 @@ external provider. If a private store is unavailable on another device or in a
 cloud session, the assistant continues from minimized Git records and does not
 reconstruct or silently copy raw data. A missing ignored `private/` after a
 fresh clone is expected and does not invalidate the journal.
+
+For an authorized populated private-data directory with a new, undocumented
+format, the journal skill can create a local `AGENTS.md` data-use guide from its
+installed template. It records only neutral purpose, layout, provenance,
+freshness, bounded lookup order, and authorization limits—never personal values
+or source excerpts. It stays inside ignored private storage, is never committed,
+does not authorize access by itself, and cannot weaken installed privacy rules.
 
 Read [PRIVACY.md](PRIVACY.md) before storing sensitive information or sharing a
 journal. Mandatory behavior and the

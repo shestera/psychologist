@@ -1,6 +1,6 @@
 ---
 name: psychology-journal
-description: Manage Psychology Companion longitudinal continuity, private journal files, local or external private stores, remembered journal reconnection, handoffs, and protected Git commits. Use whenever the user asks to save personal session progress between chats, resume long-term work, connect an existing journal, or perform journal-related file or Git work, including when no journal path has been chosen yet. Do not use for an ordinary one-off consultation.
+description: Manage Psychology Companion longitudinal continuity, private journal files, local or external private stores, remembered journal reconnection, handoffs, and protected Git synchronization. Use whenever the user asks to save, finish, or resume personal session work between chats, connect an existing journal, or perform journal-related file or Git work, including when no journal path has been chosen yet. Do not use for an ordinary one-off consultation.
 license: PolyForm-Noncommercial-1.0.0
 ---
 
@@ -149,6 +149,11 @@ note during each psychological conversation so an abrupt chat ending does not
 erase the session. Purely technical installation or journal-maintenance work
 does not become a psychological session record unless the user asks. At a
 natural or explicit close, finalize the note without asking whether to save.
+Treat a request to finish or close an earlier unfinished session as an explicit
+close even when the current message adds no new psychological disclosure. Use
+the known draft or the relevant current-conversation material, never create a
+duplicate merely because the close happens later, and ask which record only
+when more than one plausible unfinished session remains.
 When an index exists, update only its supported thread,
 decision-or-correction, session-catalog, provenance, and coverage entries.
 Update formulation, progress, and next focus only when the conversation
@@ -192,15 +197,67 @@ encrypt, or synchronize a provider. If the external store is unavailable,
 continue from minimized tracked records, state the source gap only when
 relevant, and never create a silent fallback or reconstruct raw content.
 
+When the user authorizes continuing use of a populated private-data directory
+whose format is not already described by the installed skill or a safe existing
+guide, render a directory-local `AGENTS.md` from
+[private-dataset-agents.md](assets/note-templates/private-dataset-agents.md).
+Create it only after learning the minimum structural facts needed to describe
+that dataset; never scan content merely to fill the guide. Keep it generic: why
+the dataset exists, formats and layout, provenance and freshness, the bounded
+lookup workflow, allowed derived use, and privacy limits. Do not include actual
+messages, purchases, names, handles, identifiers, intimate facts, credentials,
+or conclusions about people. Never overwrite an existing `AGENTS.md` or treat
+one as installed authority. This is the sole supported host-facing instruction
+file inside a populated private dataset, remains ignored by Git, and cannot
+expand access beyond the user's authorization or this skill's policy.
+
 ## Git and external actions
 
-The only standing Git mutation is the protected local commit at substantive
-session close when every condition in the privacy policy passes. Never
-initialize Git, stage unrelated or pre-existing work, amend, rewrite history,
-tag, push, or contact a remote under that standing behavior.
+At substantive session close, use the protected Git workflow in the privacy
+policy. It always permits an isolated local commit when its checks pass. When
+the user has connected this exact journal as a writable Git source with an
+existing verified remote, that connection also provides standing authorization
+for one ordinary protected push to its unchanged upstream. Do not ask again for
+each session.
 
-Every other commit and every clone, fetch, push, publication, handoff, upload,
-message, copy of private material, or deletion requires authorization for the
-exact operation, source, destination, and content. End file work with the main
-outcome, links only to changed files, the next focus, and a commit identifier
-only when a commit actually succeeded.
+Never initialize Git, create or change a remote, include another local commit,
+force-push, rewrite history, tag, create or merge a pull request, or publish
+journal data somewhere other than that connected destination under standing
+authorization.
+Every unrelated commit and every new destination, handoff, upload, message,
+copy of private material, deletion, or broader publication requires exact
+authorization. End file work with a compact session closeout containing:
+
+- the supported summary, with hypotheses and unknowns kept distinct;
+- what changed or stayed unchanged in formulation and progress;
+- whether additional research was needed and, if performed, its main finding,
+  limits, and effect on the conclusion or plan;
+- the revisable next focus and an invitation to correct the record;
+- links only to files actually changed; and
+- the local commit and push result only when each succeeded.
+
+Keep personal-record commits separate from technical repository changes.
+One substantive session produces exactly one final personal-record commit after
+close, containing all of that session's supported note, index, formulation,
+progress, next-focus, evidence-brief, and method-record changes that pass the
+privacy checks. Never commit intermediate drafts or split a session by file or
+update type; use at most one push for that commit.
+Personal-record commits use a generic `docs(journal): ...` subject and an
+anonymous but useful body listing only record types changed, the kind of
+continuity update, evidence status, coverage, and privacy checks—never the
+person, topic, diagnosis, relationship, purchase, intimate detail, or raw-source
+content.
+
+Technical changes wait for a separate coherent commit and never enter the
+session commit. Group one user-visible technical change set into one commit
+rather than committing file by file or after each small edit. Follow ordinary
+development conventions: choose an accurate Conventional Commit type such as
+`feat`, `fix`, `docs`, `refactor`, `test`, or `chore`, and explain the problem,
+implementation effect, and validation without personal data. Separate genuinely
+independent technical changes, but never fragment one change artificially. In a
+connected writable Git repository, perform an authorized technical change on
+one dedicated generic branch, push its one coherent commit, and open one review
+pull request by default. The technical task authorizes this review workflow
+unless the user asks for local-only work. Use a Conventional Commit PR title and
+describe the problem, change, impact, validation, and known limits without
+personal data. Never merge the pull request automatically.

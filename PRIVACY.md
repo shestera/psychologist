@@ -35,12 +35,27 @@ It:
 - does not execute code bundled with the skill.
 
 If the authorized journal root is already its own Git repository, closing a
-substantive session automatically creates a local commit only when the
+substantive session automatically creates a local commit when the
 session's changed paths are isolated from pre-existing work and pass privacy
-checks. The commit message is generic. The plugin never initializes Git, stages
-unrelated changes, rewrites history, tags, pushes, or contacts a remote as part
-of session closure; if the protected commit cannot be made, changes remain
-uncommitted and the blocker is reported.
+checks. The commit message is generic. If the user connected that exact journal
+as a writable Git source with a verified existing remote, standing authorization
+also covers pushing exactly that protected commit once to its unchanged
+upstream. It does not cover creating or changing a remote, unrelated commits,
+force-push, history rewriting, tags, or creating or merging a pull request. A
+pull request containing personal session records requires a separate explicit
+request. If a protected step cannot be completed safely, the remaining changes
+stay local and the blocker is reported.
+
+A session is committed once, after close, with all of its supported and
+privacy-checked record updates. Intermediate drafts are not committed and the
+session is not split by file. Its anonymous commit body may identify record
+classes, change kinds, evidence status, coverage, and completed privacy checks,
+but not the personal subject matter. Technical repository changes remain
+separate and use one coherent Conventional Commit per technical outcome. In a
+connected writable repository, a user-authorized technical change uses one
+generic branch, one push, and one review pull request by default, without an
+automatic merge or personal data in its metadata. Personal session commits
+continue to use direct push without an automatic PR.
 
 A repository merely remembered from another conversation is an unverified
 locator, not an active journal. It is not opened or contacted until it is
@@ -70,6 +85,14 @@ fallback or reconstruction of raw content.
 Private data is never migrated automatically. Copying requires separate
 authorization for the exact source, destination, and content, and does not
 delete the source.
+
+When an authorized populated private-data directory uses a new undocumented
+format, the plugin may render a local `AGENTS.md` data-use guide from its
+installed template. The guide contains neutral structure, provenance,
+freshness, bounded-use, and authorization metadata only; it must contain no
+personal values or source excerpts, remains ignored with the private store, and
+is never committed. It improves host discovery but does not grant access or
+override installed privacy policy.
 
 The mandatory
 [privacy and journal security policy](skills/psychology-journal/references/privacy.md)

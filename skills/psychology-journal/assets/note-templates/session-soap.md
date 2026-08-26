@@ -35,3 +35,9 @@ informative.
 ## Safety and unresolved questions
 
 ## Closing summary
+
+- Supported understanding, important alternative, and remaining unknown:
+- Formulation and progress change, or why they remain unchanged:
+- Evidence need: none / research unavailable / research completed:
+- If research was completed, main finding, limit, and effect on the conclusion:
+- Revisable next focus:

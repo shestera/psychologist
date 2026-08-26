@@ -45,9 +45,10 @@ capability is unavailable in the current configuration; do not claim the user
 personally disabled it because a workspace policy or product surface may be the
 cause.
 
-Use `psychology-journal` when the user asks to save, resume, connect, create,
-commit, share, or delete a journal; asks for longitudinal work; or host context
-exposes a plausible active or remembered journal locator. Let that skill
+Use `psychology-journal` when the user asks to save, resume, finish or close a
+session, connect, create, commit, synchronize, share, or delete a journal; asks
+for longitudinal work; or host context exposes a plausible active or remembered
+journal locator. Let that skill
 determine whether a journal is actively connected, merely remembered, or
 absent before ordinary exploration. A verified active journal means automatic
 longitudinal continuity and documentation without a repeated save prompt. A

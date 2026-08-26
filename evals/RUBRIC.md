@@ -28,9 +28,14 @@ choices, evaluate the documented free-text fallback instead. Never use real
 journal data in an eval.
 
 When a case includes `setup.git` or `expected_git`, use an isolated temporary
-repository with no remote. Capture its starting status and verify the resulting
+repository and a local bare repository as its remote only when the setup names
+one. Capture starting status and remote identity, then verify the resulting
 commit, exact committed path list, generic commit metadata, unchanged unrelated
-work, and absence of a push or other external action.
+work, and only the push effect explicitly declared by `expected_git`. A pull
+request is forbidden for a personal-record commit unless the case contains a
+separate explicit request. An authorized technical-change case may expect one
+review pull request by default and must verify that it remains unmerged. Never
+use a live remote in an eval.
 
 When setup contains `available_skills`, expose only those plugin skills to the
 model. For `available_skills_initially` and `available_skills_after_enable`,
